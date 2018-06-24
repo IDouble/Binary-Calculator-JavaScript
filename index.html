@@ -1,0 +1,261 @@
+﻿<!doctype html>
+
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A Binary Calculator">
+        <title>Binary Calculator</title>
+    
+
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+        <!-- Button -->
+    
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.pubsub.js"></script>
+        <script src="js/bignumber.js"></script>
+        <script src="js/clipboard.js"></script>
+        <script src="js/cleave.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap-switch.js"></script>
+
+        <!-- Button -->
+
+
+        <!-- Bootstrap -->
+
+        <!-- Bootstrap -->
+        
+
+        <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <header>
+                <h1>Binary Calculator <span>A Binary Calculator</span></h1>
+            </header>
+
+            <section class="color-1 col-md-12">
+
+                <div class="jumbotron col-md-10 offset-md-1 optionsBox">
+
+                    <div class="container optionContainer">
+                        <h1 class="display-6">Options</h1>
+                        <hr class="my-4">
+
+                        <div class="input-group input-group-lg optionRow">
+
+                            <!-- Bit Selectbox - Start -->
+
+                            <div class="input-group mb-3 col-md-2 leftBox">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" id="inputGroup-sizing" for="inputGroupSelectBit">Bits</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelectBit">
+                                    <!-- custom-select-lg, for bigger box -->
+                                    <option value="8" selected>8 Bit</option>
+                                    <option value="16">16 Bit</option>
+                                    <option value="32">32 Bit</option>
+                                    <!--<option value="64">64 Bit</option>-->
+                                </select>
+                            </div>
+
+                            <!-- Bit Selectbox - End -->
+                            <!-- Option Buttons - Signed/Unsigned -->
+                            
+                            <div class="input-group mb-3 offset-md-1 col-md-2" title="Signed/Unsigned Function not implemented yet.">
+                                <p class="optionButtons">
+
+                                    <input type="checkbox" id="switch-SignedUnsigned" disabled="disabled" data-on-text="Signed" data-off-text="Unsigned" data-on-color="success" data-off-color="danger" data-label-text="Byte" data-inverse="true">
+
+                                </p>
+                            </div>
+                                
+
+                            <!-- Option Buttons - Signed/Unsigned - End-->
+                            <!-- Option Buttons - AC -->
+
+                            <div class="input-group mb-3 offset-md-3 col-md-1">
+                                <p class="optionButtons AC">
+                                    <button class="button button-2 button-2c" id="ACButton">AC</button>
+                                </p>
+                            </div>
+
+                            <!-- Option Buttons - AC - End -->
+                            <!-- Hexdecimal,Ternary Selectbox - Start -->
+
+                            <div class="input-group mb-3 offset-md-1 col-md-2 rightBox">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" id="inputGroup-sizing" for="inputGroupSelectSystem">System</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelectSystem">
+                                    <option value="16" selected>Hexadecimal (16)</option> <!-- 16 -->
+                                    <option value="8">Octal (8)</option> <!-- 8 -->
+                                    <option value="4">Quaternary (4)</option> <!-- 4 -->
+                                    <option value="3">Ternary (3)</option> <!-- 3 -->
+                                </select>
+                            </div>
+
+                            <!-- Hexdecimal,Ternary Selectbox - End -->
+
+                        </div>
+                    </div>        
+                </div>
+
+                <div class="inputs">
+
+                    <!-- Input Group - Operand 1 - Start -->
+
+                    <div class="input-group input-group-lg col-md-10 offset-md-1">
+
+                        <div class="input-group spinner col-md-2">
+                            <input type="text" class="decimalInputs form-control" id="operand1Decimal" value="13">
+                            <div class="input-group-btn-vertical">
+                                <button class="btn btn-default plus" id="operand1DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
+                                <button class="btn btn-default minus" id="operand1DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group-lg col-md-4 offset-md-1">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 1</span>
+                            </div>
+
+                            <input type="text" class="binaryInputs form-control" id="operand1Binary" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+
+                        </div>
+
+                        <div class="input-group input-group-lg col-md-2">
+
+                            <p class="col-md-12 bitwiseButtons">
+                                <button class="button button-2 button-2c" id="operand1NOT">~</button>
+                                <button class="button button-2 button-2c" id="operand1LEFTSHIFT"><<</button>
+                                <button class="button button-2 button-2c" id="operand1RIGHTSHIFT">>></button>
+                            </p>
+
+                        </div>
+
+                        <div class="input-group col-md-2 offset-md-1">
+                            <input type="text" class="form-control" id="operand1System">
+                        </div>
+                    </div>
+
+
+                    <!-- Input Group - End -->
+                    <!-- Input Group - Operand 2 - Start -->
+
+                    <div class="input-group input-group-lg col-md-10 offset-md-1">
+
+                        <div class="input-group spinner col-md-2">
+                            <input type="text" class="decimalInputs form-control" id="operand2Decimal" value="8">
+                            <div class="input-group-btn-vertical">
+                                <button class="btn btn-default plus" id="operand2DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
+                                <button class="btn btn-default minus" id="operand2DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group-lg col-md-4 offset-md-1">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 2</span>
+                            </div>
+
+                            <input type="text" class="binaryInputs form-control" id="operand2Binary" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+
+                        </div>
+
+                        <div class="input-group input-group-lg col-md-2">
+
+                            <p class="col-md-12 bitwiseButtons">
+                                <button class="button button-2 button-2c" id="operand2NOT">~</button>
+                                <button class="button button-2 button-2c" id="operand2LEFTSHIFT"><<</button>
+                                <button class="button button-2 button-2c" id="operand2RIGHTSHIFT">>></button>
+                            </p>
+
+                        </div>
+
+                        <div class="input-group col-md-2 offset-md-1">
+                            <input type="text" class="form-control" id="operand2System">
+                        </div>
+                    </div>
+
+
+                    <!-- Input Group - Operand 2 - End -->
+                    <!-- Input Group - Result - Start -->
+
+                    <div class="input-group input-group-lg col-md-10 offset-md-1">
+
+                        <div class="input-group spinner col-md-2">
+                            <input type="text" class="decimalInputs form-control" id="resultDecimal" value="21" readonly>
+                            <div class="input-group-btn-vertical">
+                                <button class="btn btn-default" id="resultCopy" type="button" data-clipboard-target="#resultDecimal"><i class="fa fa-copy"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="input-group input-group-lg col-md-6 offset-md-1">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Result</span>
+                            </div>
+
+                            <input type="text" class="binaryInputs form-control" id="resultBinary" aria-label="Large" aria-describedby="inputGroup-sizing-sm" readonly>
+
+                        </div>
+
+                        <div class="input-group col-md-2 offset-md-1">
+                            <input type="text" class="form-control" id="resultSystem" readonly>
+                        </div>
+                    </div>
+
+                    <!-- Input Group - Result - End -->
+                    <!-- Input Group - Function Buttons -->
+
+                    <div class="functionalButtons" id="BTNContainer">
+
+                        <p class="col-md-12">
+                            <button class="button button-2 button-2c active" id="addBtn">+</button>
+                            <button class="button button-2 button-2c" id="subBtn">-</button>
+                            <button class="button button-2 button-2c" id="mulBtn">*</button>
+                            <button class="button button-2 button-2c" id="divBtn">/</button>
+                        </p>
+
+                        <p class="col-md-12">
+                            <button class="button button-2 button-2c" id="ANDBtn">(&) AND</button>
+                            <button class="button button-2 button-2c" id="ORBtn">(|) OR</button>
+                            <button class="button button-2 button-2c" id="XORBtn">(^) XOR</button>
+                        </p>
+
+                    </div>
+
+                    <!-- Input Group - Function Buttons - End -->
+
+                </div>
+
+            </section>
+        
+            <section class="color-2 col-md-12">
+                <p>TEST TEST TEST</p>
+            </section>
+
+        </div><!-- /container -->
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
