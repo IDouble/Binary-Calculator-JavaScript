@@ -4,16 +4,16 @@ A Calculator for binary operations
 
 Feel free to use the Calculator for teaching Numeral systems as an example.
 If you have Suggestions or find Errors, you're free to contact me on GitHub.
-The Reason why I build this Calculator was, because there wasn't a good one in the Web.
+The Reason why I build this Calculator was, because there wasn't a good one on the Web.
 The next Project will be a ternary Calculator for ternary calculations with trytes and trits,
 this will be a perfect template to create such one.
 
 ## Binary-Operations ➕ ➖ ➗ ✖️
 
-- + (Addition)
-- - (Subtraction)
-- * (Multiplication)
-- / (Division)
+- \+ (Addition)
+- \- (Subtraction)
+- \* (Multiplication)
+- \/ (Division)
 
 - ! (NOT) ex. ! 10101010 = 01010101
 - << (Bitwise Left Shift) ex. 1010 << 0101
@@ -31,9 +31,9 @@ while you're typing an algorithm already calculates every number you type.
 
 ## The Calculator allows you to ⛓
 
-* see how Hexdecimal Values are stored in Binary (ex. HTML Color Codes RGB(255,255,255) = RGB(8-Bit,8-Bit,8-Bit))
-* how much 8,16,32 Bit can store, (ex. unsigned 8-Bit can store values from (00000000) 0 ... 255 (11111111))
-* see how other numeral systems are working (ternary,quaternary,octal,hexdecimal)
+- see how Hexdecimal Values are stored in Binary (ex. HTML Color Codes RGB(255, 255, 255) = RGB(8-Bit, 8-Bit, 8-Bit))
+- how much 8, 16, 32 Bit can store, (ex. unsigned 8-Bit can store values from (00000000) 0 ... 255 (11111111))
+- see how other numeral systems are working (ternary, quaternary, octal, hexdecimal)
 
 ## The Future 💡
 
