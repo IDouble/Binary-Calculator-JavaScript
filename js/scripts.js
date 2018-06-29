@@ -97,41 +97,6 @@ var rechner = (function (rechner) {
         // Private functions
         // --------------------------------------------------------------------------------
         function Init() {
-            //$navFooterUL.on('click', '.footer', function (e) {
-            //    var $t = $(this);
-
-            //    if ($t.parent().index() === 3) {
-            //        window.open($t.attr('href'), '_blank');
-            //    }
-            //    else if ($t.hasClass('active')) {
-            //        Close();
-            //    }
-            //    else {
-            //        $navFooterUL.find('.active').removeClass('active');
-            //        $t.addClass('active');
-            //        Open($t);
-            //    }
-            //    e.preventDefault();
-            //});
-
-            //$('.link-contact').on('click', function (e) {
-            //    var $t = $navFooterUL.find('> li:eq(0) > a')
-            //    $t.addClass('active');
-            //    Open($t);
-            //    e.preventDefault();
-            //});
-
-            //$navFooterClose.on({
-            //    click: function (e) {
-            //        Close();
-            //    }
-            //});
-
-            //$.subscribe('updatepanel', function (e) {
-            //    if ($('#map').length > 0) {
-            //        InitMap();
-            //    }
-            //});
 
             // Init Bootstrap Switch for Signed/Unsigned Checkbox
 
@@ -315,15 +280,6 @@ var rechner = (function (rechner) {
                     }
                 });
             }
-
-            
-            /*
-            var $operand1NOT = $('#operand1NOT');
-            var $operand1LEFTSHIFT = $('#operand1LEFTSHIFT');
-            var $operand1RIGHTSHIFT = $('#operand1RIGHTSHIFT');
-            var $operand1ZEROFILLRIGHTSHIFT = $('#operand1ZEROFILLRIGHTSHIFT');
-            */
-
         }
 
         // Select Change Listener
@@ -624,7 +580,7 @@ var rechner = (function (rechner) {
             }
         }
 
-        // XOR (&)
+        // XOR (^)
 
         function binaryXOR(binaryInputID, binaryInputID2) {
 
