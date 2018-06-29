@@ -155,7 +155,7 @@ a:active {
 }
 
 .color-2 {
-	background: #f06060;
+	background: #FF0000;
 }
 
 .color-3 {
@@ -394,4 +394,28 @@ a:active {
 
 .inputs .functionalButtons .button-2c:hover{
     box-shadow: 0 4px rgba(135, 193, 230, 0.7);
+}
+
+/* GitHub Logo */
+
+.gitHubText{
+    font-size:14px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    line-height: 24px;
+    transition: 0.125s ease-in-out;
+}
+
+.gitHubText:hover {
+    text-decoration:none; 
+    color: rgba(255, 255, 255, 1);
+}
+
+.gitHubLogo{
+    height:80px;
+    color: rgba(255, 255, 255, 1) !important;
+  }
+
+.gitHubLogo:hover {
+  color: rgba(255, 255, 255, 1) !important;
 }
