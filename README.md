@@ -1,4 +1,4 @@
-# Binary-Calculator-JavaScript 0️⃣ 1️⃣
+# Binary Calculator JavaScript 0️⃣ 1️⃣
 
 A Calculator for binary operations
 
@@ -8,7 +8,7 @@ The Reason why I build this Calculator was, because there wasn't a good one on t
 The next Project will be a ternary Calculator for ternary calculations with trytes and trits,
 this will be a perfect template to create such one.
 
-## Binary-Operations ➕ ➖ ➗ ✖️
+## Binary Operations ➕ ➖ ➗ ✖️
 
 - \+ (Addition)
 - \- (Subtraction)
@@ -38,6 +38,7 @@ while you're typing, an algorithm already calculates every number you type and d
 ## The Future 💡
 
 - [ ] Implementing a switch that allows you to change between Unsigned and Signed (negative numbers possible, ex. unsigned 16-Bit Integer).
-- [ ] Using BigNumber.js, this is needed to display 64-Bit, 128-Bit , 256-Bit, ... (JavaScript has no datatypes, var is being saved as a signed 32-Bit Integer +- 2 147 483 647)
+- [ ] Using BigNumber.js, this is needed to display 64-Bit, 128-Bit , 256-Bit, ... (JavaScript has no datatypes, var is being saved as a signed 32-Bit Integer +- 2 147 483 647).
+- [ ] More responsive elements and better support for mobile devices.
 - [ ] Implementing a Ternary Calculator that is working with Trits and Trytes, this is very interesting for quantum mechanics (Quantum Computing). It's a good way of a concept that could be used to use the power of Qubits that can have multiple states.
 - [ ] More numeral systems.
