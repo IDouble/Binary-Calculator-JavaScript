@@ -75,24 +75,6 @@ var rechner = (function (rechner) {
         var $ORBtn = $('#ORBtn');
         var $XORBtn = $('#XORBtn');
 
-
-        //var $header = $('#header');
-        //var $navFooterUL = $('#nav-footer-ul');
-        //var $navFooterClose = $('#footer-bottom-close');
-
-
-        //var $header = $('#header');
-        //var $navFooterUL = $('#nav-footer-ul');
-        //var $navFooterClose = $('#footer-bottom-close');
-        //var $footerTop = $('#footer-top');
-        //var $footerBottom = $('#footer-bottom');
-        //var $footerBottomContent = $footerBottom.find('.footer-bottom-content');
-        //var $imprint = $('#imprint');
-        //var $body = $('html, body');
-        //var $sections = $('section');
-
-        //var $navLocation;
-
         // --------------------------------------------------------------------------------
         // Private functions
         // --------------------------------------------------------------------------------
@@ -184,6 +166,7 @@ var rechner = (function (rechner) {
                 decimalInputID.val(systemToInt(systemInputID.val()));
                 binaryInputID.val(float64ToInt64Binary(systemToInt(systemInputID.val())).substr(pos_to_neg($inputGroupSelectBit.val())));
             } else {
+                // TODO: Signed Function
                 //if (signed) {
                 //    alert("Error: Only Numbers Between " + pos_to_neg((Math.pow(2, $inputGroupSelectBit.val()) / 2)) + " and " + ((Math.pow(2, $inputGroupSelectBit.val()) / 2 ) - 1) + " can be converted to " + $inputGroupSelectBit.val() + "-Bit");
                 //} else {
@@ -227,6 +210,8 @@ var rechner = (function (rechner) {
             $ACButton.button().click(function () {
                 allClear();
             });
+
+            // TODO: Signed Function
 
             //if ($("#switch-SignedUnsigned").is(':checked')) {
             //    $("#txtAge").show();  // checked
