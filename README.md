@@ -1,4 +1,6 @@
-# Binary Calculator JavaScript 0️⃣ 1️⃣
+# ([Binary Calculator JavaScript 0️⃣ 1️⃣](https://ayidouble.github.io/Binary-Calculator-JavaScript))
+
+**Link** : **[https://ayidouble.github.io/Binary-Calculator-JavaScript](https://ayidouble.github.io/Binary-Calculator-JavaScript)**
 
 A **Calculator** for binary operations
 
