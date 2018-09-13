@@ -151,11 +151,11 @@ a:active {
 }
 
 .color-1 {
-	background: #0e83cd;
+	background: rgba(0,0,0,0.85);
 }
 
 .color-2 {
-	background: #FF0000;
+	background: rgba(0,0,0,1);
 }
 
 .color-3 {
@@ -236,7 +236,7 @@ a:active {
 
 .input-group-btn-vertical .btn-default{
   transition-timing-function: ease-in-out;
-  background-color:rgba(255,255,255,0.5);
+  background-color:rgba(0,0,0,0.7);
   box-shadow:none !important;
 }
 
@@ -271,11 +271,11 @@ a:active {
 }
 
 #resultCopy:hover {
-  background-color:rgba(135, 193, 230, 0.8);
+  background-color:rgba(0 , 0, 0, 0.8);
 }
 
 #resultCopy:active {
-  background-color:rgba(135, 193, 230, 1);
+  background-color:rgba(0 , 0, 0, 1);
   box-shadow:none !important;
 }
 
@@ -285,16 +285,17 @@ a:active {
 .optionsBox{
     padding-top:20px !important;
     padding-bottom:20px !important;
+    background-color: rgba(0 , 0, 0, 0.7) !important;
 }
 
 .optionsBox h1{
-    color:#000;
+    color:#FFFFFF;
 }
 
 
 .optionsBox .input-group-text{
-    background-color:#0e83cd;
-    color:#FFF;
+    background-color:rgba(0 , 0, 0, 0.8);
+    color:#FFF !important;
 }
 
 .optionsBox .custom-select-lg{
@@ -358,8 +359,8 @@ a:active {
     height:42px;
     padding:10px 20px !important;
     margin:0 5px !important;
-    background-color:rgba(135, 193, 230, 1);
-    box-shadow: 0 6px rgba(135, 193, 230, 0.7);
+    background-color:rgba(0 , 0, 0, 0.4);
+    box-shadow: 0 6px rgba(0 , 0, 0, 0.7);
 }
 
 .inputs .binaryInputs{
@@ -367,7 +368,7 @@ a:active {
 }
 
 .inputs .button-2c:hover{
-    box-shadow: 0 4px rgba(135, 193, 230, 0.7);
+    box-shadow: 0 4px rgba(0 , 0, 0, 0.7);
 }
 
 /* Inputs - Lower Functional Buttons */
@@ -389,6 +390,7 @@ a:active {
 }
 
 .inputs .functionalButtons .active{
+    border:2px solid #FFFFFF;
     background-color:rgba(0 , 0, 0, 1) !important;
 }
 
@@ -439,4 +441,21 @@ a:active {
 
 header{
     padding-bottom:16px !important;
+}
+
+.fa{
+  color:#FFFFFF;
+}
+
+.input-group-text{
+  color:#FFFFFF !important;
+  background-color:rgba(0 , 0, 0, 0.7) !important;
+}
+
+.form-control{
+  color:#000000 !important;
+}
+
+.input-group-btn-vertical .btn{
+  border:#FFFFFF 1px solid;
 }
