@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A Binary Calculator">
+        <meta name="description" content="A Binary Calculator for: + (Addition), - (Subtraction), * (Multiplication), / (Division), ! (NOT), << (Bitwise Left Shift), >> (Bitwise Right Shift), AND / NAND, OR / NOR, XOR / XNOR .">
         <title>Binary Calculator</title>
     
 
@@ -53,13 +53,31 @@
 
             <!-- GitHub Ribbon - End -->
 
-            <header>
-                <h1>Binary Calculator <span>A Binary Calculator</span></h1>
+            <header class="col-lg-12">
+                <h1>Binary Calculator </h1>
+                    <span class="col-lg-12 titleSpan"> 
+                        <ul class="col-lg-4">
+                          <li>! (NOT)</li>
+                          <li><< (Bitwise Left Shift)</li>
+                          <li>>> (Bitwise Right Shift)</li>
+                        </ul>
+                        <ul class="col-lg-4">
+                          <li>+ (Addition)</li>
+                          <li>- (Subtraction)</li>
+                          <li>* (Multiplication)</li>
+                          <li>/ (Division)</li>
+                        </ul>
+                        <ul class="col-lg-4">
+                          <li>AND / NAND</li>
+                          <li>OR / NOR</li>
+                          <li>XOR / XNOR</li>
+                        </ul>
+                    </span>
             </header>
 
-            <section class="color-1 col-md-12">
+            <section class="color-1 col-lg-12">
 
-                <div class="jumbotron col-md-10 offset-md-1 optionsBox">
+                <div class="jumbotron col-lg-10 offset-lg-1 optionsBox">
 
                     <div class="container optionContainer">
                         <h1 class="display-6">Options</h1>
@@ -69,7 +87,7 @@
 
                             <!-- Bit Selectbox - Start -->
 
-                            <div class="input-group mb-3 col-md-2 leftBox">
+                            <div class="input-group mb-3 col-lg-2 leftBox">
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" id="inputGroup-sizing" for="inputGroupSelectBit">Bits</label>
                                 </div>
@@ -85,7 +103,7 @@
                             <!-- Bit Selectbox - End -->
                             <!-- Option Buttons - Signed/Unsigned -->
                             
-                            <div class="input-group mb-3 offset-md-1 col-md-2" title="Signed/Unsigned Function not implemented yet.">
+                            <div class="input-group mb-3 offset-lg-1 col-lg-2" title="Signed/Unsigned Function not implemented yet.">
                                 <p class="optionButtons">
 
                                     <!-- TODO : Signed Function -->
@@ -99,7 +117,7 @@
                             <!-- Option Buttons - Signed/Unsigned - End-->
                             <!-- Option Buttons - AC -->
 
-                            <div class="input-group mb-3 offset-md-3 col-md-1">
+                            <div class="input-group mb-3 offset-lg-3 col-lg-1">
                                 <p class="optionButtons AC">
                                     <button class="button button-2 button-2c" id="ACButton">AC</button>
                                 </p>
@@ -108,10 +126,12 @@
                             <!-- Option Buttons - AC - End -->
                             <!-- Hexdecimal,Ternary Selectbox - Start -->
 
-                            <div class="input-group mb-3 offset-md-1 col-md-2 rightBox">
+                            <div class="input-group mb-3 offset-lg-1 col-lg-2 rightBox">
+                            <!--
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" id="inputGroup-sizing" for="inputGroupSelectSystem">System</label>
                                 </div>
+                            -->
                                 <select class="custom-select" id="inputGroupSelectSystem">
                                     <option value="16" selected>Hexadecimal (16)</option> <!-- 16 -->
                                     <option value="8">Octal (8)</option> <!-- 8 -->
@@ -130,9 +150,9 @@
 
                     <!-- Input Group - Operand 1 - Start -->
 
-                    <div class="input-group input-group-lg col-md-10 offset-md-1">
+                    <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
-                        <div class="input-group spinner col-md-2">
+                        <div class="input-group spinner col-lg-2">
                             <input type="text" class="decimalInputs form-control" id="operand1Decimal" value="13">
                             <div class="input-group-btn-vertical">
                                 <button class="btn btn-default plus" id="operand1DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
@@ -140,7 +160,7 @@
                             </div>
                         </div>
 
-                        <div class="input-group input-group-lg col-md-4 offset-md-1">
+                        <div class="input-group input-group-lg col-lg-4 offset-lg-1">
 
                             <div class="input-group-prepend">
                                 <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 1</span>
@@ -150,9 +170,9 @@
 
                         </div>
 
-                        <div class="input-group input-group-lg col-md-2">
+                        <div class="input-group input-group-lg col-lg-2">
 
-                            <p class="col-md-12 bitwiseButtons">
+                            <p class="col-lg-12 bitwiseButtons">
                                 <button class="button button-2 button-2c" id="operand1NOT">~</button>
                                 <button class="button button-2 button-2c" id="operand1LEFTSHIFT"><<</button>
                                 <button class="button button-2 button-2c" id="operand1RIGHTSHIFT">>></button>
@@ -160,7 +180,7 @@
 
                         </div>
 
-                        <div class="input-group col-md-2 offset-md-1">
+                        <div class="input-group col-lg-2 offset-lg-1">
                             <input type="text" class="form-control" id="operand1System">
                         </div>
                     </div>
@@ -169,9 +189,9 @@
                     <!-- Input Group - End -->
                     <!-- Input Group - Operand 2 - Start -->
 
-                    <div class="input-group input-group-lg col-md-10 offset-md-1">
+                    <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
-                        <div class="input-group spinner col-md-2">
+                        <div class="input-group spinner col-lg-2">
                             <input type="text" class="decimalInputs form-control" id="operand2Decimal" value="8">
                             <div class="input-group-btn-vertical">
                                 <button class="btn btn-default plus" id="operand2DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
@@ -179,7 +199,7 @@
                             </div>
                         </div>
 
-                        <div class="input-group input-group-lg col-md-4 offset-md-1">
+                        <div class="input-group input-group-lg col-lg-4 offset-lg-1">
 
                             <div class="input-group-prepend">
                                 <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 2</span>
@@ -189,9 +209,9 @@
 
                         </div>
 
-                        <div class="input-group input-group-lg col-md-2">
+                        <div class="input-group input-group-lg col-lg-2">
 
-                            <p class="col-md-12 bitwiseButtons">
+                            <p class="col-lg-12 bitwiseButtons">
                                 <button class="button button-2 button-2c" id="operand2NOT">~</button>
                                 <button class="button button-2 button-2c" id="operand2LEFTSHIFT"><<</button>
                                 <button class="button button-2 button-2c" id="operand2RIGHTSHIFT">>></button>
@@ -199,7 +219,7 @@
 
                         </div>
 
-                        <div class="input-group col-md-2 offset-md-1">
+                        <div class="input-group col-lg-2 offset-lg-1">
                             <input type="text" class="form-control" id="operand2System">
                         </div>
                     </div>
@@ -208,16 +228,16 @@
                     <!-- Input Group - Operand 2 - End -->
                     <!-- Input Group - Result - Start -->
 
-                    <div class="input-group input-group-lg col-md-10 offset-md-1">
+                    <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
-                        <div class="input-group spinner col-md-2">
+                        <div class="input-group spinner col-lg-2">
                             <input type="text" class="decimalInputs form-control" id="resultDecimal" value="21" readonly>
                             <div class="input-group-btn-vertical">
                                 <button class="btn btn-default" id="resultCopy" type="button" data-clipboard-target="#resultDecimal"><i class="fa fa-copy"></i></button>
                             </div>
                         </div>
 
-                        <div class="input-group input-group-lg col-md-6 offset-md-1">
+                        <div class="input-group input-group-lg col-lg-6 offset-lg-1">
 
                             <div class="input-group-prepend">
                                 <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Result</span>
@@ -227,7 +247,7 @@
 
                         </div>
 
-                        <div class="input-group col-md-2 offset-md-1">
+                        <div class="input-group col-lg-2 offset-lg-1">
                             <input type="text" class="form-control" id="resultSystem" readonly>
                         </div>
                     </div>
@@ -237,14 +257,14 @@
 
                     <div class="functionalButtons" id="BTNContainer">
 
-                        <p class="col-md-12">
+                        <p class="col-lg-12">
                             <button class="button button-2 button-2c active" id="addBtn">+</button>
                             <button class="button button-2 button-2c" id="subBtn">-</button>
                             <button class="button button-2 button-2c" id="mulBtn">*</button>
                             <button class="button button-2 button-2c" id="divBtn">/</button>
                         </p>
 
-                        <p class="col-md-12">
+                        <p class="col-lg-12">
                             <button class="button button-2 button-2c" id="ANDBtn">(&) AND</button>
                             <button class="button button-2 button-2c" id="ORBtn">(|) OR</button>
                             <button class="button button-2 button-2c" id="XORBtn">(^) XOR</button>
@@ -258,7 +278,7 @@
 
             </section>
         
-            <section class="color-2 col-md-12">
+            <section class="color-2 col-lg-12">
                 <a href="https://github.com/AYIDouble" class="gitHubText"><p>Created by AYIDouble (Alpay Yildirim)</p> <p> <img src="img/GitHub_Logo_White.png" class="gitHubLogo"></img></p></a>
             </section>
 

@@ -419,3 +419,24 @@ a:active {
 .gitHubLogo:hover {
   color: rgba(255, 255, 255, 1) !important;
 }
+
+/* Title */
+
+.titleSpan{
+    font-size:12px; 
+    font-weight:bold;
+    margin-top:10px;
+    position:relative;
+}
+
+.titleSpan ul{
+    list-style-type: none;
+    display:inline-table;
+    width:30%;
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+header{
+    padding-bottom:16px !important;
+}
