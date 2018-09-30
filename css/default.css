@@ -336,6 +336,14 @@ a:active {
         display: none !important;
     }
 
+    .inputLabel{
+        display: none !important;
+    }
+
+    .binaryInputs {
+      border-radius: 5px !important;
+    }
+
     .rightBox{
         display: none !important;
     }
@@ -344,8 +352,8 @@ a:active {
         display: none !important;
     }
 
-    .button-2c{
-        padding-bottom: 10px !important;
+    #BTNContainer button{
+        margin-top: 20px !important;
     }
 }
 
