@@ -348,12 +348,16 @@ a:active {
         display: none !important;
     }
 
-    #operand1System , #operand2System, #resultSystem{
+    #operand1System , #operand2System, #resultSystem, .operandSystemContainer, .bitwiseButtonsContainer{
         display: none !important;
     }
 
     #BTNContainer button{
         margin-top: 20px !important;
+    }
+
+    .inputs .button-2c {
+        padding: 10px 20px !important;
     }
 }
 
