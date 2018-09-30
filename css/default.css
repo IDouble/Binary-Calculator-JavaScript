@@ -344,16 +344,37 @@ a:active {
       border-radius: 5px !important;
     }
 
-    .rightBox{
+    .rightBox, .my-4{
         display: none !important;
     }
 
-    #operand1System , #operand2System, #resultSystem, .operandSystemContainer, .bitwiseButtonsContainer{
+    #operand1System , #operand2System, #resultSystem, .operandSystemContainer, .bitwiseButtonsContainer, .optionButtonsContainer{
         display: none !important;
+    }
+
+    .optionsBox{
+      margin-top:-40px;
+    }
+
+    .optionContainer h1{
+        margin-bottom:30px;
+    }
+
+    .inputs{
+      margin-top:-15px;
+    }
+
+    #BTNContainer{
+        margin-top:-10px;
+        margin-bottom:-60px;
     }
 
     #BTNContainer button{
         margin-top: 20px !important;
+    }
+
+    #BTNContainer .BTNRow{
+        margin-top: -25px !important;
     }
 
     .inputs .button-2c {
