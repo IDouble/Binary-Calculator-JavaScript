@@ -144,7 +144,7 @@
                     <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
                         <div class="input-group spinner col-lg-2">
-                            <input type="text" class="decimalInputs form-control" id="operand1Decimal" value="13">
+                            <input type="number" pattern="[0-9]*" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" class="decimalInputs form-control" id="operand1Decimal" value="13">
                             <div class="input-group-btn-vertical">
                                 <button class="btn btn-default plus" id="operand1DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
                                 <button class="btn btn-default minus" id="operand1DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
@@ -183,7 +183,7 @@
                     <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
                         <div class="input-group spinner col-lg-2">
-                            <input type="text" class="decimalInputs form-control" id="operand2Decimal" value="8">
+                            <input type="number" pattern="[0-9]*" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" class="decimalInputs form-control" id="operand2Decimal" value="8">
                             <div class="input-group-btn-vertical">
                                 <button class="btn btn-default plus" id="operand2DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
                                 <button class="btn btn-default minus" id="operand2DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
@@ -222,7 +222,7 @@
                     <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
                         <div class="input-group spinner col-lg-2">
-                            <input type="text" class="decimalInputs form-control" id="resultDecimal" value="21" readonly>
+                            <input type="number" pattern="[0-9]*" onkeydown="return FilterInput(event)" onpaste="handlePaste(event)" class="decimalInputs form-control" id="resultDecimal" value="21" readonly>
                             <div class="input-group-btn-vertical">
                                 <button class="btn btn-default" id="resultCopy" type="button" data-clipboard-target="#resultDecimal"><i class="fa fa-copy"></i></button>
                             </div>
@@ -276,5 +276,30 @@
         </div><!-- /container -->
 
         <script src="js/scripts.js"></script>
+
+        <script>
+
+            function FilterInput(event) {
+                var keyCode = ('which' in event) ? event.which : event.keyCode;
+
+                isNotWanted = (keyCode == 50 || keyCode == 51 || keyCode == 52 || keyCode == 53 || keyCode == 54 || keyCode == 55 || keyCode == 56 || keyCode == 57 || keyCode == 98 || keyCode == 99 || keyCode == 100 || keyCode == 101 || keyCode == 102 || keyCode == 103 || keyCode == 104 || keyCode == 105 );
+                return !isNotWanted;
+            };
+
+            function handlePaste (e) {
+                var clipboardData, pastedData;
+
+                // Get pasted data via clipboard API
+                clipboardData = e.clipboardData || window.clipboardData;
+                pastedData = clipboardData.getData('Text').toUpperCase();
+
+                if(pastedData.indexOf('E')>-1) {
+                    //alert('found an E');
+                    e.stopPropagation();
+                    e.preventDefault();
+                }
+            };
+
+        </script>
     </body>
 </html>
