@@ -12,12 +12,12 @@ this will be a perfect template to create such one.
 
 ![Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR](Images/Binary-Calculator-v1-Image.png)
 
-**The Binary Calculator is just a Website** that each possible device can access to.</br>
+**[The Binary Calculator is just a Website](https://ayidouble.github.io/Binary-Calculator-JavaScript)** that each possible device can access to.</br>
 ## ***You can use the Binary Calculator on your: 📱 💻 🖥***
-- ***Smartphone (Android/iOS etc.) 📱***
-- ***Tablet (Chrome, Firefox, Edge, Safari) 📱***
-- ***Laptop (Chrome, Firefox, Edge, Safari) 💻***
-- ***Destkop (Chrome, Firefox, Edge, Safari) 🖥***
+- ***[Smartphone](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Android/iOS etc.) 📱***
+- ***[Tablet](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 📱***
+- ***[Laptop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 💻***
+- ***[Destkop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 🖥***
 
 ## Binary Operations ➕ ➖ ➗ ✖️
 
