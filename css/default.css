@@ -331,6 +331,24 @@ a:active {
     }
 }
 
+@media screen and (max-width: 766px) {
+    .bitwiseButtons {
+        display: none !important;
+    }
+
+    .rightBox{
+        display: none !important;
+    }
+
+    #operand1System , #operand2System, #resultSystem{
+        display: none !important;
+    }
+
+    .button-2c{
+        padding-bottom: 10px !important;
+    }
+}
+
 .bootstrap-switch-null *{
     cursor: not-allowed !important;
 }
@@ -357,8 +375,8 @@ a:active {
 
 .inputs .button-2c{
     height:42px;
-    padding:10px 20px !important;
-    margin:0 5px !important;
+    padding:10px 20px;
+    margin:0 5px;
     background-color:rgba(0 , 0, 0, 0.4);
     box-shadow: 0 6px rgba(0 , 0, 0, 0.7);
 }
@@ -379,8 +397,8 @@ a:active {
 
 .inputs .functionalButtons .button-2c{
     height:42px;
-    padding:8px 40px !important;
-    margin:0 5px !important;
+    padding:8px 40px;
+    margin:0 5px;
     background-color:rgba(0 , 0, 0, 0.8);
     box-shadow: 0 6px rgba(0, 0, 0, 0.7) !important;
 }
