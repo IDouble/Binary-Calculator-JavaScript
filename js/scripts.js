@@ -503,7 +503,10 @@ var rechner = (function (rechner) {
             if ($operand1Binary.val() != "" && $operand2Binary.val() != "") {
                 $resultBinary.val(float64ToInt64Binary(binaryToInt(binaryInputID.val()) / binaryToInt(binaryInputID2.val())).substr(pos_to_neg($inputGroupSelectBit.val())));
                 updateAll($resultDecimal, $resultBinary, $resultSystem, inputEnum.FunctionalButton);
-                $resultDecimal.val($resultDecimal.val() + " ,% " + binaryToInt(binaryInputID.val()) % binaryToInt(binaryInputID2.val()));
+                $resultDecimal.val($resultDecimal.val());
+
+                // TODO : Fix Error Message on switching the numeral system, when Division is activated.
+                //$resultDecimal.val($resultDecimal.val() + " ,% " + binaryToInt(binaryInputID.val()) % binaryToInt(binaryInputID2.val()));
             }
         }
 
