@@ -10,7 +10,7 @@ The Reason why I build this **Calculator** was, because there wasn't a good one 
 The next Project will be a ternary **Calculator** for ternary calculations with trytes and trits,
 this will be a perfect template to create such one.
 
-![ChemTools Logo](Images/Binary-Calculator-v1-Image.png)
+![Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR](Images/Binary-Calculator-v1-Image.png)
 
 ## Binary Operations ➕ ➖ ➗ ✖️
 
