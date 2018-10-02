@@ -306,7 +306,7 @@ var rechner = (function (rechner) {
             } else {
                 var integer = new BigNumber(int, 10);
                 var base = Number($inputGroupSelectSystem.val());
-                int = integer.toString(base);  // ex. for octal toString(8), ternary toString(3)
+                int = integer.toString(base).replace('\'','');  // ex. for octal toString(8), ternary toString(3)
                 return int;
             }
         }
