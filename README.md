@@ -2,7 +2,7 @@
 
 **Link** : **[https://ayidouble.github.io/Binary-Calculator-JavaScript](https://ayidouble.github.io/Binary-Calculator-JavaScript)**
 
-A **Calculator** for binary operations
+A handy **Calculator** for binary operations, that works on **all devices**. 📱 💻 🖥
 
 Feel free to use the **Calculator** for teaching Numeral systems as an example.
 If you have Suggestions or find Errors, you're free to contact me on GitHub or submit your changes.
