@@ -352,6 +352,10 @@ a:active {
         display: none !important;
     }
 
+    .footer,.header{
+      display: none !important;
+    }
+
     .optionsBox{
       margin-top:-40px;
     }
