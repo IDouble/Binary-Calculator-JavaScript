@@ -160,10 +160,10 @@ var rechner = (function (rechner) {
                 binaryInputID.val(float64ToInt64Binary(decimalInputID.val()).substr(pos_to_neg($inputGroupSelectBit.val())));
                 systemInputID.val(intToSystem(decimalInputID.val()));
             } else if (inputType == inputEnum.Binary || inputType == inputEnum.FunctionalButton) {
-                decimalInputID.val(binaryToInt(binaryInputID.val()).replace('\'',''));
+                decimalInputID.val(binaryToInt(binaryInputID.val()));
                 systemInputID.val(intToSystem(decimalInputID.val()));
             } else if (inputType == inputEnum.System) {
-                decimalInputID.val(systemToInt(systemInputID.val()).replace('\'',''));
+                decimalInputID.val(systemToInt(systemInputID.val()));
                 binaryInputID.val(float64ToInt64Binary(systemToInt(systemInputID.val())).substr(pos_to_neg($inputGroupSelectBit.val())));
             } else {
                 // TODO: Signed Function
@@ -306,7 +306,7 @@ var rechner = (function (rechner) {
             } else {
                 var integer = new BigNumber(int, 10);
                 var base = Number($inputGroupSelectSystem.val());
-                int = integer.toString(base).replace('\'','');  // ex. for octal toString(8), ternary toString(3)
+                int = integer.toString(base);  // ex. for octal toString(8), ternary toString(3)
                 return int;
             }
         }
