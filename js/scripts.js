@@ -160,10 +160,10 @@ var rechner = (function (rechner) {
                 binaryInputID.val(float64ToInt64Binary(decimalInputID.val()).substr(pos_to_neg($inputGroupSelectBit.val())));
                 systemInputID.val(intToSystem(decimalInputID.val()));
             } else if (inputType == inputEnum.Binary || inputType == inputEnum.FunctionalButton) {
-                decimalInputID.val(binaryToInt(binaryInputID.val()));
+                decimalInputID.val(binaryToInt(binaryInputID.val()).replace('\'',''));
                 systemInputID.val(intToSystem(decimalInputID.val()));
             } else if (inputType == inputEnum.System) {
-                decimalInputID.val(systemToInt(systemInputID.val()));
+                decimalInputID.val(systemToInt(systemInputID.val()).replace('\'',''));
                 binaryInputID.val(float64ToInt64Binary(systemToInt(systemInputID.val())).substr(pos_to_neg($inputGroupSelectBit.val())));
             } else {
                 // TODO: Signed Function
