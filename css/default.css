@@ -348,7 +348,7 @@ a:active {
         display: none !important;
     }
 
-    #operand1System , #operand2System, #resultSystem, .operandSystemContainer, .bitwiseButtonsContainer, .optionButtonsContainer, .ribbon{
+    #operand1System , #operand2System, #resultSystem, .operandSystemContainer, .bitwiseButtonsContainer, .optionButtonsContainer, .ribbon, .h1Options{
         display: none !important;
     }
 
