@@ -1,4 +1,4 @@
-# ([🔟 Binary Calculator JavaScript 🔟](https://ayidouble.github.io/Binary-Calculator-JavaScript))
+# [🔟 Binary Calculator JavaScript 🔟](https://ayidouble.github.io/Binary-Calculator-JavaScript))
 
 **Link** : **[https://ayidouble.github.io/Binary-Calculator-JavaScript](https://ayidouble.github.io/Binary-Calculator-JavaScript)**
 
@@ -9,10 +9,10 @@ If you have Suggestions or find Errors, you're free to contact me on GitHub or s
 The Reason why I build this **Calculator** was, because there wasn't a good one on the Web.
 The next Project will be a ternary **Calculator** for ternary calculations with trytes and trits,
 this will be a perfect template to create such one.
-## ([📱 Mobile (Smartphone): 📱](https://ayidouble.github.io/Binary-Calculator-JavaScript)
+## [📱 Mobile (Smartphone): 📱](https://ayidouble.github.io/Binary-Calculator-JavaScript)
 ![Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR Mobile (Smartphone)](Images/Binary-Calculator-v1-Mobile-Image.png)
 
-## ([💻 Destkop: 🖥](https://ayidouble.github.io/Binary-Calculator-JavaScript)
+## [💻 Destkop: 🖥](https://ayidouble.github.io/Binary-Calculator-JavaScript)
 ![Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR](Images/Binary-Calculator-v1-Image.png)
 
 **[The Binary Calculator is just a Website](https://ayidouble.github.io/Binary-Calculator-JavaScript)** that each possible device can access to.</br>
