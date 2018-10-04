@@ -1,4 +1,4 @@
-# [🔟 Binary Calculator JavaScript 🔟](https://ayidouble.github.io/Binary-Calculator-JavaScript))
+# [🔟 Binary Calculator JavaScript 🔟](https://ayidouble.github.io/Binary-Calculator-JavaScript)
 
 **Link** : **[https://ayidouble.github.io/Binary-Calculator-JavaScript](https://ayidouble.github.io/Binary-Calculator-JavaScript)**
 
