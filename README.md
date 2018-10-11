@@ -26,6 +26,10 @@ this will be a perfect template to create such one.
 - ***[Laptop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 💻***
 - ***[Destkop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 🖥***
 
+
+## [📱 FREE Download Google Play Store: 📱](https://play.google.com/store/apps/details?id=com.binarycalculator.ayidouble.binarycalculator.app)
+![Free Google Play Store Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR Mobile (Smartphone)](Images/Binary-Calculator-Google-Play.png)
+
 ## Binary Operations ➕ ➖ ➗ ✖️
 
 - **\+ (Addition)**
