@@ -103,11 +103,13 @@ var rechner = (function (rechner) {
 
             new ClipboardJS("#resultCopy");
 
+            /*
             var cleave = new Cleave('.decimalInputs', {
                 numeral: true,
                 numeralThousandsGroupStyle: 'thousand',
                 delimiter: "'"
             });
+			*/
 
             $(".binaryInputs").keydown(function (e) {
                 // Allow: backspace, delete
