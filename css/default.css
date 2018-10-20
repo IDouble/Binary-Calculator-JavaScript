@@ -22,7 +22,11 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #89867e;
-	background: #000000;
+	background: #262626;
+}
+
+header {
+	background:#ffffff;
 }
 
 a {
@@ -151,11 +155,11 @@ a:active {
 }
 
 .color-1 {
-	background: rgba(0,0,0,0.85);
+	background: #262626;
 }
 
 .color-2 {
-	background: rgba(0,0,0,1);
+	background: #000000;
 }
 
 .color-3 {
@@ -525,4 +529,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
  
 input[type="number"] {
     -moz-appearance: textfield;
+}
+
+.ribbon img{
+	z-index:5;
 }
