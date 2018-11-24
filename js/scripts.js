@@ -5,10 +5,7 @@ var rechner = (function (rechner) {
         // --------------------------------------------------------------------------------
         // Private properties
         // --------------------------------------------------------------------------------
-        var index = -1;
-        var gMap = null;
-        var gMarkres = [];
-
+        
         var inputEnum = {
             Decimal: 1,
             Binary: 2,
