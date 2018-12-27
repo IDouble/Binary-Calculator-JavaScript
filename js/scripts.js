@@ -401,7 +401,6 @@ var rechner = (function (rechner) {
         // AC - All Clear
 
         function allClear() {
-            
             $operand1Decimal.val('');
             $operand1Binary.val('');
             $operand1System.val('');
@@ -411,14 +410,13 @@ var rechner = (function (rechner) {
             $resultDecimal.val('');
             $resultBinary.val('');
             $resultSystem.val('');
-
         }
 
         // Bitwise Operators - The Buttons right side from the operand
         // Not (~) or (!)
 
         function bitwiseNot(binaryInputID) {
-            
+
             var binary = binaryInputID.val();
             var reversedBinary = "";
 
