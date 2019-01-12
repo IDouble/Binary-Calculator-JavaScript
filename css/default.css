@@ -451,7 +451,7 @@ a:active {
 .inputs .functionalButtons .active{
     border:2px solid #FFFFFF;
     background-color:rgba(0 , 0, 0, 1) !important;
-    padding: 6px 38px !important;
+    padding: 8px 38px !important;
 }
 
 .inputs .functionalButtons .button-2c:hover{
