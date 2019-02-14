@@ -72,6 +72,11 @@ var rechner = (function (rechner) {
         var $ORBtn = $('#ORBtn');
         var $XORBtn = $('#XORBtn');
 
+        // NEW BITWISE OPERATION FUNCTION BUTTONS
+        var $NANDBtn = $('#NANDBtn');
+        var $NORBtn = $('#NORBtn');
+        var $XNORBtn = $('#XNORBtn');
+
         // --------------------------------------------------------------------------------
         // Private functions
         // --------------------------------------------------------------------------------
@@ -188,6 +193,15 @@ var rechner = (function (rechner) {
                 }
                 else if ($XORBtn.hasClass("active")) {
                     binaryXOR($operand1Binary, $operand2Binary);
+                }
+                else if ($NANDBtn.hasClass("active")) {
+                    binaryNAND($operand1Binary, $operand2Binary);
+                }
+                else if ($NORBtn.hasClass("active")) {
+                    binaryNOR($operand1Binary, $operand2Binary);
+                }
+                else if ($XNORBtn.hasClass("active")) {
+                    binaryXNOR($operand1Binary, $operand2Binary);
                 }
             }
 
@@ -588,6 +602,67 @@ var rechner = (function (rechner) {
                 $resultBinary.val(binXOR);
                 updateAll($resultDecimal, $resultBinary, $resultSystem, inputEnum.FunctionalButton);
             }
+        }
+
+        // NEW BITWISE FUNCTIONS
+        function binaryNAND(binaryInputID, binaryInputID2) {
+
+            if ($operand1Binary.val() != "" && $operand2Binary.val() != "") {
+
+                // binary.length == binary2.length
+                var binary = binaryInputID.val();
+                var binary2 = binaryInputID2.val();
+                var binNAND = "";
+                let bSelect = { true: '1', false: '0' };
+
+                for (let d = 0; d < binary.length; d++) {
+                    binNAND += bSelect[!(binary.charAt(d) & binary2.charAt(d))];
+                }
+
+                $resultBinary.val(binNAND);
+                updateAll($resultDecimal, $resultBinary, $resultSystem, inputEnum.FunctionalButton);
+            }
+
+        }
+
+        function binaryNOR(binaryInputID, binaryInputID2) {
+
+            if ($operand1Binary.val() != "" && $operand2Binary.val() != "") {
+
+                // binary.length == binary2.length
+                var binary = binaryInputID.val();
+                var binary2 = binaryInputID2.val();
+                var binNOR = "";
+                let bSelect = { true: '1', false: '0' };
+
+                for (let d = 0; d < binary.length; d++) {
+                    binNOR += bSelect[!(binary.charAt(d) | binary2.charAt(d))];
+                }
+
+                $resultBinary.val(binNOR);
+                updateAll($resultDecimal, $resultBinary, $resultSystem, inputEnum.FunctionalButton);
+            }
+
+        }
+
+        function binaryXNOR(binaryInputID, binaryInputID2) {
+
+            if ($operand1Binary.val() != "" && $operand2Binary.val() != "") {
+
+                // binary.length == binary2.length
+                var binary = binaryInputID.val();
+                var binary2 = binaryInputID2.val();
+                var binXNOR = "";
+                let bSelect = { true: '1', false: '0' };
+
+                for (let d = 0; d < binary.length; d++) {
+                    binXNOR += bSelect[!(binary.charAt(d) ^ binary2.charAt(d))];
+                }
+
+                $resultBinary.val(binXNOR);
+                updateAll($resultDecimal, $resultBinary, $resultSystem, inputEnum.FunctionalButton);
+            }
+
         }
 
         // Update all fields at the start
