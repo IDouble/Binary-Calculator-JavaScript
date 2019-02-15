@@ -72,7 +72,6 @@ var rechner = (function (rechner) {
         var $ORBtn = $('#ORBtn');
         var $XORBtn = $('#XORBtn');
 
-        // NEW BITWISE OPERATION FUNCTION BUTTONS
         var $NANDBtn = $('#NANDBtn');
         var $NORBtn = $('#NORBtn');
         var $XNORBtn = $('#XNORBtn');
@@ -604,12 +603,10 @@ var rechner = (function (rechner) {
             }
         }
 
-        // NEW BITWISE FUNCTIONS
         function binaryNAND(binaryInputID, binaryInputID2) {
 
             if ($operand1Binary.val() != "" && $operand2Binary.val() != "") {
 
-                // binary.length == binary2.length
                 var binary = binaryInputID.val();
                 var binary2 = binaryInputID2.val();
                 var binNAND = "";
@@ -629,7 +626,6 @@ var rechner = (function (rechner) {
 
             if ($operand1Binary.val() != "" && $operand2Binary.val() != "") {
 
-                // binary.length == binary2.length
                 var binary = binaryInputID.val();
                 var binary2 = binaryInputID2.val();
                 var binNOR = "";
@@ -649,7 +645,6 @@ var rechner = (function (rechner) {
 
             if ($operand1Binary.val() != "" && $operand2Binary.val() != "") {
 
-                // binary.length == binary2.length
                 var binary = binaryInputID.val();
                 var binary2 = binaryInputID2.val();
                 var binXNOR = "";
