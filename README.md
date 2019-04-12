@@ -16,7 +16,7 @@ this will be a perfect template to create such one.
 ![Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR Mobile (Smartphone)](Images/Binary-Calculator-Android_1.png)
 ![Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR Mobile (Smartphone)](Images/Binary-Calculator-Android_2.png)
 
-## [💻 Destkop: 🖥](https://ayidouble.github.io/Binary-Calculator-JavaScript)
+## [💻 Desktop: 🖥](https://ayidouble.github.io/Binary-Calculator-JavaScript)
 ![Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR](Images/Binary-Calculator-v1-Image.png)
 
 **[The Binary Calculator is just a Website](https://ayidouble.github.io/Binary-Calculator-JavaScript)** that each possible device can access to.</br>
