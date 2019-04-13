@@ -24,7 +24,7 @@ this will be a perfect template to create such one.
 - ***[Smartphone](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Android/iOS etc.) 📱***
 - ***[Tablet](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 📱***
 - ***[Laptop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 💻***
-- ***[Destkop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 🖥***
+- ***[Desktop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 🖥***
 
 
 ## [📱 FREE Download Google Play Store: 📱](https://play.google.com/store/apps/details?id=com.binarycalculator.ayidouble.binarycalculator.app)
