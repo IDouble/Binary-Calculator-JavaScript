@@ -328,6 +328,22 @@ var rechner = (function (rechner) {
             return parseInt(binary, 2);
         }
 
+        // logic binary to decimal - Signed -> Two's complement
+
+		function getSignedInteger(binary) {
+			let negative = (bits[0] === '1');
+			if (negative) {
+				let inverse = '';
+			for (let i = 0; i < bits.length; i++) {
+				inverse += (bits[i] === '0' ? '1' : '0');
+			}
+				return (parseInt(inverse, 2) + 1) * -1;
+			} else {
+				return parseInt(bits, 2);
+			}
+		}
+
+
         // logic decimal to binary
 
         // IIFE to scope internal variables
@@ -402,6 +418,26 @@ var rechner = (function (rechner) {
         function pos_to_neg(num) {
             return -Math.abs(num);
         }
+
+        // logic decimal to binary- Signed -> Two's complement
+
+		function toTwosComplement(integer, numberBytes, dontCheckRange) {   
+			// @integer - > the integer to convert
+			// @numberBytes -> the number of bytes representing the number (defaults to 1 if not specified)
+
+			var numberBits = (numberBytes || 1) * 8;
+
+			// make sure its in range given the number of bits
+			if (!dontCheckRange && (integer < (-(1 << (numberBits - 1))) || integer > ((1 << (numberBits - 1)) - 1))) 
+				throw "Integer out of range given " + numberBytes + " byte(s) to represent.";
+
+			// if positive, return the positive value
+			if (integer >= 0)
+				return integer;
+
+			// if negative, convert to twos complement representation
+			return ~(((-integer) - 1) | ~((1 << numberBits) - 1));
+		}
 
         // functions Buttons 
 
