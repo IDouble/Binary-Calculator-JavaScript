@@ -1,351 +1,365 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="A Binary Calculator for: + (Addition), - (Subtraction), * (Multiplication), / (Division), ! (NOT), << (Bitwise Left Shift), >> (Bitwise Right Shift), AND / NAND, OR / NOR, XOR / XNOR .">
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-        <meta name="viewport" content="width=device-width" />
 
-        <!-- Icon -->
-        <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon.ico">
-        <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-192.png">
-        <link rel="icon" type="image/png" sizes="160x160" href="img/favicon-160.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96.png">
-        <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
-        <link rel="apple-touch-icon" href="img/favicon-57.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon-60.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon-120.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon-76.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon-152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
-        <meta name="msapplication-TileColor" content="#FFFFFF">
-        <meta name="msapplication-TileImage" content="img/favicon-144.png">
-        <meta name="msapplication-config" content="/browserconfig.xml">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="A Binary Calculator for: + (Addition), - (Subtraction), * (Multiplication), / (Division), ! (NOT), << (Bitwise Left Shift), >> (Bitwise Right Shift), AND / NAND, OR / NOR, XOR / XNOR .">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width" />
 
-        <title>Binary Calculator</title>
+  <!-- Icon -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="img/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="img/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+  <link rel="apple-touch-icon" href="img/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="img/favicon-144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
 
-        <link rel="stylesheet" href="css/styles.css?v=1.0">
-        
-        <link rel="stylesheet" type="text/css" href="css/default.css" />
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome.css" > -->
+  <title>Binary Calculator</title>
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/jquery.pubsub.js"></script>
-        <script src="js/bignumber.js"></script>
-        <script src="js/clipboard.js"></script>
-        <script src="js/cleave.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/bootstrap-switch.js"></script>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-        <script>
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="css/fontawesome.css" > -->
 
-        function FilterInput(event) {
-            var keyCode = ('which' in event) ? event.which : event.keyCode;
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.pubsub.js"></script>
+  <script src="js/bignumber.js"></script>
+  <script src="js/clipboard.js"></script>
+  <script src="js/cleave.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap-switch.js"></script>
 
-            isNotWanted = (keyCode == 50 || keyCode == 51 || keyCode == 52 || keyCode == 53 || keyCode == 54 || keyCode == 55 || keyCode == 56 || keyCode == 57 || keyCode == 98 || keyCode == 99 || keyCode == 100 || keyCode == 101 || keyCode == 102 || keyCode == 103 || keyCode == 104 || keyCode == 105 );
-            return !isNotWanted;
-        };
+  <script>
+    function FilterInput(event) {
+      var keyCode = ('which' in event) ? event.which : event.keyCode;
 
-        function handlePaste (e) {
-            var clipboardData, pastedData;
+      isNotWanted = (keyCode == 50 || keyCode == 51 || keyCode == 52 || keyCode == 53 || keyCode == 54 || keyCode == 55 || keyCode == 56 || keyCode == 57 || keyCode == 98 || keyCode == 99 || keyCode == 100 || keyCode == 101 || keyCode == 102 ||
+        keyCode == 103 || keyCode == 104 || keyCode == 105);
+      return !isNotWanted;
+    };
 
-            // Get pasted data via clipboard API
-            clipboardData = e.clipboardData || window.clipboardData;
-            pastedData = clipboardData.getData('Text').toUpperCase();
+    function handlePaste(e) {
+      var clipboardData, pastedData;
 
-            if(pastedData.indexOf('E')>-1) {
-                //alert('found an E');
-                e.stopPropagation();
-                e.preventDefault();
-            }
-        };
-        
-        // Disable scroll when focused on a number input.
-        $('form').on('focus', 'input[type=number]', function(e) {
-            $(this).on('wheel', function(e) {
-                e.preventDefault();
-            });
-        });
+      // Get pasted data via clipboard API
+      clipboardData = e.clipboardData || window.clipboardData;
+      pastedData = clipboardData.getData('Text').toUpperCase();
 
-        // Restore scroll on number inputs.
-        $('form').on('blur', 'input[type=number]', function(e) {
-            $(this).off('wheel');
-        });
+      if (pastedData.indexOf('E') > -1) {
+        //alert('found an E');
+        e.stopPropagation();
+        e.preventDefault();
+      }
+    };
 
-        // Disable up and down keys.
-        $('form').on('keydown', 'input[type=number]', function(e) {
-            if ( e.which == 38 || e.which == 40 )
-                e.preventDefault();
-        });  
+    // Disable scroll when focused on a number input.
+    $('form').on('focus', 'input[type=number]', function(e) {
+      $(this).on('wheel', function(e) {
+        e.preventDefault();
+      });
+    });
 
-        </script>
+    // Restore scroll on number inputs.
+    $('form').on('blur', 'input[type=number]', function(e) {
+      $(this).off('wheel');
+    });
 
-        <!--[if lt IE 9]>
+    // Disable up and down keys.
+    $('form').on('keydown', 'input[type=number]', function(e) {
+      if (e.which == 38 || e.which == 40)
+        e.preventDefault();
+    });
+  </script>
+
+  <!--[if lt IE 9]>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
         <![endif]-->
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="container">
+  <div class="container">
 
-            <!-- GitHub Ribbon - Start -->
+    <!-- GitHub Ribbon - Start -->
 
-            <a href="https://github.com/AYIDouble/Binary-Calculator-JavaScript" class="ribbon"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme_right_darkblue.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/AYIDouble/Binary-Calculator-JavaScript" class="ribbon"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme_right_darkblue.png" alt="Fork me on GitHub"></a>
 
-            <!-- GitHub Ribbon - End -->
+    <!-- GitHub Ribbon - End -->
 
-            <header class="col-lg-12 header">
-                <h1>Binary Calculator </h1>
-                    <span class="col-lg-12 titleSpan"> 
-                        <ul class="col-lg-4">
-                          <li>! (NOT)</li>
-                          <li><< (Bitwise Left Shift)</li>
-                          <li>>> (Bitwise Right Shift)</li>
-                        </ul>
-                        <ul class="col-lg-4">
-                          <li>+ (Addition)</li>
-                          <li>- (Subtraction)</li>
-                          <li>* (Multiplication)</li>
-                          <li>/ (Division)</li>
-                        </ul>
-                        <ul class="col-lg-4">
-                          <li>AND / NAND</li>
-                          <li>OR / NOR</li>
-                          <li>XOR / XNOR</li>
-                        </ul>
-                    </span>
-            </header>
+    <header class="col-lg-12 header">
+      <h1>Binary Calculator </h1>
+      <span class="col-lg-12 titleSpan">
+        <ul class="col-lg-4">
+          <li>! (NOT)</li>
+          <li>
+            << (Bitwise Left Shift)</li> <li>>> (Bitwise Right Shift)
+          </li>
+        </ul>
+        <ul class="col-lg-4">
+          <li>+ (Addition)</li>
+          <li>- (Subtraction)</li>
+          <li>* (Multiplication)</li>
+          <li>/ (Division)</li>
+        </ul>
+        <ul class="col-lg-4">
+          <li>AND / NAND</li>
+          <li>OR / NOR</li>
+          <li>XOR / XNOR</li>
+        </ul>
+      </span>
+    </header>
 
-            <section class="color-1 col-lg-12">
+    <section class="color-1 col-lg-12">
 
-                <div class="jumbotron col-lg-10 offset-lg-1 optionsBox">
+      <div class="jumbotron col-lg-10 offset-lg-1 optionsBox">
 
-                    <div class="container optionContainer">
-                        <h1 class="display-6 h1Options">Options</h1>
-                        <hr class="my-4">
+        <div class="container optionContainer">
+          <h1 class="display-6 h1Options">Options</h1>
+          <hr class="my-4">
 
-                        <div class="input-group input-group-lg optionRow">
+          <div class="input-group input-group-lg optionRow">
 
-                            <!-- Bit Selectbox - Start -->
+            <!-- Bit Selectbox - Start -->
 
-                            <div class="input-group mb-3 col-lg-3 leftBox">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" id="inputGroup-sizing" for="inputGroupSelectBit">Bits</label>
-                                </div>
-                                <select class="custom-select" id="inputGroupSelectBit">
-                                    <!-- custom-select-lg, for bigger box -->
-                                    <option value="8" selected>8 Bit</option>
-                                    <option value="16">16 Bit</option>
-                                    <option value="32">32 Bit</option>
-                                    <option value="64">64 Bit</option>
-                                </select>
-                            </div>
+            <div class="input-group mb-3 col-lg-3 leftBox">
+              <div class="input-group-prepend">
+                <label class="input-group-text" id="inputGroup-sizing" for="inputGroupSelectBit">Bits</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelectBit">
+                <!-- custom-select-lg, for bigger box -->
+                <option value="8" selected>8 Bit</option>
+                <option value="16">16 Bit</option>
+                <option value="32">32 Bit</option>
+                <option value="64">64 Bit</option>
+              </select>
+            </div>
 
-                            <!-- Bit Selectbox - End -->
-                            <!-- Option Buttons - Signed/Unsigned -->
-                            
-                            <div class="input-group mb-3 offset-lg-1 col-lg-2 optionButtonsContainer" title="Signed/Unsigned Function not implemented yet.">
-                                <p class="optionButtons">
+            <!-- Bit Selectbox - End -->
+            <!-- Option Buttons - Signed/Unsigned -->
 
-                                    <!-- TODO : Signed Function -->
+            <div class="input-group mb-3 offset-lg-1 col-lg-2 optionButtonsContainer" title="Signed/Unsigned Function not implemented yet.">
+              <p class="optionButtons">
 
-                                    <!-- <input type="checkbox" id="switch-SignedUnsigned" disabled="disabled" data-on-text="Signed" data-off-text="Unsigned" data-on-color="success" data-off-color="danger" data-label-text="Byte" data-inverse="true"> -->
+                <!-- TODO : Signed Function -->
 
-                                </p>
-                            </div>
-                                
+                <!-- <input type="checkbox" id="switch-SignedUnsigned" disabled="disabled" data-on-text="Signed" data-off-text="Unsigned" data-on-color="success" data-off-color="danger" data-label-text="Byte" data-inverse="true"> -->
 
-                            <!-- Option Buttons - Signed/Unsigned - End-->
-                            <!-- Option Buttons - AC -->
+              </p>
+            </div>
 
-                            <div class="input-group mb-3 offset-lg-1 col-lg-1">
-                                <p class="optionButtons AC">
-                                    <button class="button button-2 button-2c" id="ACButton">AC</button>
-                                </p>
-                            </div>
 
-                            <!-- Option Buttons - AC - End -->
-                            <!-- Hexdecimal,Ternary Selectbox - Start -->
+            <!-- Option Buttons - Signed/Unsigned - End-->
+            <!-- Option Buttons - AC -->
 
-                            <div class="input-group mb-3 offset-lg-1 col-lg-3 rightBox">
-                            <!--
+            <div class="input-group mb-3 offset-lg-1 col-lg-1">
+              <p class="optionButtons AC">
+                <button class="button button-2 button-2c" id="ACButton">AC</button>
+              </p>
+            </div>
+
+            <!-- Option Buttons - AC - End -->
+            <!-- Hexdecimal,Ternary Selectbox - Start -->
+
+            <div class="input-group mb-3 offset-lg-1 col-lg-3 rightBox">
+              <!--
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" id="inputGroup-sizing" for="inputGroupSelectSystem">System</label>
                                 </div>
                             -->
-                                <select class="custom-select" id="inputGroupSelectSystem">
-                                    <option value="16" selected>Hexadecimal(16)</option> <!-- 16 -->
-                                    <option value="8">Octal(8)</option> <!-- 8 -->
-                                    <option value="4">Quaternary(4)</option> <!-- 4 -->
-                                    <option value="3">Ternary(3)</option> <!-- 3 -->
-                                </select>
-                            </div>
+              <select class="custom-select" id="inputGroupSelectSystem">
+                <option value="16" selected>Hexadecimal(16)</option> <!-- 16 -->
+                <option value="8">Octal(8)</option> <!-- 8 -->
+                <option value="4">Quaternary(4)</option> <!-- 4 -->
+                <option value="3">Ternary(3)</option> <!-- 3 -->
+              </select>
+            </div>
 
-                            <!-- Hexdecimal,Ternary Selectbox - End -->
+            <!-- Hexdecimal,Ternary Selectbox - End -->
 
-                        </div>
-                    </div>        
-                </div>
+          </div>
+        </div>
+      </div>
 
-                <div class="inputs">
+      <div class="inputs">
 
-                    <!-- Input Group - Operand 1 - Start -->
+        <!-- Input Group - Operand 1 - Start -->
 
-                    <div class="input-group input-group-lg col-lg-10 offset-lg-1">
+        <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
-                        <div class="input-group spinner col-lg-2">
-                            <input type="number" pattern="[0-9]*" onkeydown="return( FilterInput(event) || event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106) || (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) )" onpaste="handlePaste(event)" class="decimalInputs form-control" id="operand1Decimal" value="5">
-                            <div class="input-group-btn-vertical">
-                                <button class="btn btn-default plus" id="operand1DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
-                                <button class="btn btn-default minus" id="operand1DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
-                            </div>
-                        </div>
+          <div class="input-group spinner col-lg-2">
+            <input type="number" pattern="[0-9]*"
+              onkeydown="return( FilterInput(event) || event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106) || (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) )"
+              onpaste="handlePaste(event)" class="decimalInputs form-control" id="operand1Decimal" value="5">
+            <div class="input-group-btn-vertical">
+              <button class="btn btn-default plus" id="operand1DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
+              <button class="btn btn-default minus" id="operand1DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
+            </div>
+          </div>
 
-                        <div class="input-group input-group-lg col-lg-4">
+          <div class="input-group input-group-lg col-lg-4">
 
-                            <div class="input-group-prepend">
-                                <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 1</span>
-                            </div>
+            <div class="input-group-prepend">
+              <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 1</span>
+            </div>
 
-                            <input type="text" pattern="[0-1]*" class="binaryInputs form-control" id="operand1Binary" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" pattern="[0-1]*" class="binaryInputs form-control" id="operand1Binary" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
 
-                        </div>
+          </div>
 
-                        <div class="input-group input-group-lg col-lg-2 bitwiseButtonsContainer">
+          <div class="input-group input-group-lg col-lg-2 bitwiseButtonsContainer">
 
-                            <p class="col-lg-12 bitwiseButtons">
-                                <button class="button button-2 button-2c" id="operand1NOT" title="NOT">~</button>
-                                <button class="button button-2 button-2c" id="operand1LEFTSHIFT" title="LEFT-SHIFT"><<</button>
-                                <button class="button button-2 button-2c" id="operand1RIGHTSHIFT" title="RIGHT-SHIFT">>></button>
-                            </p>
+            <p class="col-lg-12 bitwiseButtons">
+              <button class="button button-2 button-2c" id="operand1NOT" title="NOT">~</button>
+              <button class="button button-2 button-2c" id="operand1LEFTSHIFT" title="LEFT-SHIFT">
+                <<</button> <button class="button button-2 button-2c" id="operand1RIGHTSHIFT" title="RIGHT-SHIFT">>>
+              </button>
+            </p>
 
-                        </div>
+          </div>
 
-                        <div class="input-group col-lg-2 offset-lg-2 operandSystemContainer">
-                            <input type="text" class="form-control" id="operand1System">
-                        </div>
-                    </div>
-
-
-                    <!-- Input Group - End -->
-                    <!-- Input Group - Operand 2 - Start -->
-
-                    <div class="input-group input-group-lg col-lg-10 offset-lg-1">
-
-                        <div class="input-group spinner col-lg-2">
-                            <input type="number" pattern="[0-9]*" onkeydown="return( FilterInput(event) || event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106) || (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) )" onpaste="handlePaste(event)" class="decimalInputs form-control" id="operand2Decimal" value="8">
-                            <div class="input-group-btn-vertical">
-                                <button class="btn btn-default plus" id="operand2DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
-                                <button class="btn btn-default minus" id="operand2DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
-                            </div>
-                        </div>
-
-                        <div class="input-group input-group-lg col-lg-4">
-
-                            <div class="input-group-prepend">
-                                <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 2</span>
-                            </div>
-
-                            <input type="text" pattern="[0-1]*" class="binaryInputs form-control" id="operand2Binary" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-
-                        </div>
-
-                        <div class="input-group input-group-lg col-lg-2 bitwiseButtonsContainer">
-
-                            <p class="col-lg-12 bitwiseButtons">
-                                <button class="button button-2 button-2c" id="operand2NOT" title="NOT">~</button>
-                                <button class="button button-2 button-2c" id="operand2LEFTSHIFT" title="LEFT-SHIFT"><<</button>
-                                <button class="button button-2 button-2c" id="operand2RIGHTSHIFT" title="RIGHT-SHIFT">>></button>
-                            </p>
-
-                        </div>
-
-                        <div class="input-group col-lg-2 offset-lg-2 operandSystemContainer">
-                            <input type="text" class="form-control" id="operand2System">
-                        </div>
-                    </div>
+          <div class="input-group col-lg-2 offset-lg-2 operandSystemContainer">
+            <input type="text" class="form-control" id="operand1System">
+          </div>
+        </div>
 
 
-                    <!-- Input Group - Operand 2 - End -->
-                    <!-- Input Group - Result - Start -->
+        <!-- Input Group - End -->
+        <!-- Input Group - Operand 2 - Start -->
 
-                    <div class="input-group input-group-lg col-lg-10 offset-lg-1">
+        <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
-                        <div class="input-group spinner col-lg-2">
-                            <input onClick="this.select();" type="text" pattern="[0-9]*" onkeydown="return( FilterInput(event) || event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106) || (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) )" onpaste="handlePaste(event)" class="decimalInputs form-control" id="resultDecimal" value="13" readonly>
-                            <div class="input-group-btn-vertical">
-                                <button class="btn btn-default" id="resultCopy" type="button" data-clipboard-target="#resultDecimal"><i class="fa fa-copy"></i></button>
-                            </div>
-                        </div>
+          <div class="input-group spinner col-lg-2">
+            <input type="number" pattern="[0-9]*"
+              onkeydown="return( FilterInput(event) || event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106) || (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) )"
+              onpaste="handlePaste(event)" class="decimalInputs form-control" id="operand2Decimal" value="8">
+            <div class="input-group-btn-vertical">
+              <button class="btn btn-default plus" id="operand2DecimalPlus" type="button"><i class="fa fa-plus"></i></button>
+              <button class="btn btn-default minus" id="operand2DecimalMinus" type="button"><i class="fa fa-minus"></i></button>
+            </div>
+          </div>
 
-                        <div class="input-group input-group-lg col-lg-7">
+          <div class="input-group input-group-lg col-lg-4">
 
-                            <div class="input-group-prepend">
-                                <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Result</span>
-                            </div>
+            <div class="input-group-prepend">
+              <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Operand 2</span>
+            </div>
 
-                            <input onClick="this.select();" type="text" pattern="[0-1]*" class="binaryInputs form-control" id="resultBinary" aria-label="Large" aria-describedby="inputGroup-sizing-sm" readonly>
+            <input type="text" pattern="[0-1]*" class="binaryInputs form-control" id="operand2Binary" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
 
-                        </div>
+          </div>
 
-                        <div class="input-group col-lg-2 offset-lg-1">
-                            <input onClick="this.select();" type="text" class="form-control" id="resultSystem" readonly>
-                        </div>
-                    </div>
+          <div class="input-group input-group-lg col-lg-2 bitwiseButtonsContainer">
 
-                    <!-- Input Group - Result - End -->
-                    <!-- Input Group - Function Buttons -->
+            <p class="col-lg-12 bitwiseButtons">
+              <button class="button button-2 button-2c" id="operand2NOT" title="NOT">~</button>
+              <button class="button button-2 button-2c" id="operand2LEFTSHIFT" title="LEFT-SHIFT">
+                <<</button> <button class="button button-2 button-2c" id="operand2RIGHTSHIFT" title="RIGHT-SHIFT">>>
+              </button>
+            </p>
 
-                    <div class="functionalButtons" id="BTNContainer">
+          </div>
 
-                        <p class="col-lg-12 BTNRow">
-                            <button class="button button-2 button-2c active" id="addBtn">+</button>
-                            <button class="button button-2 button-2c" id="subBtn">-</button>
-                            <button class="button button-2 button-2c" id="mulBtn">*</button>
-                            <button class="button button-2 button-2c" id="divBtn">/</button>
-                        </p>
+          <div class="input-group col-lg-2 offset-lg-2 operandSystemContainer">
+            <input type="text" class="form-control" id="operand2System">
+          </div>
+        </div>
 
-                        <p class="col-lg-12 BTNRow">
-                            <button class="button button-2 button-2c" id="ANDBtn">(&) AND</button>
-                            <button class="button button-2 button-2c" id="ORBtn">(|) OR</button>
-                            <button class="button button-2 button-2c" id="XORBtn">(^) XOR</button>
-                        </p>
 
-                        <p class="col-lg-12 BTNRow">
-                            <button class="button button-2 button-2c" id="NANDBtn">(<span style="text-decoration: overline">&</span>) NAND</button>
-                            <button class="button button-2 button-2c" id="NORBtn">(<span style="text-decoration: overline">|</span>) NOR</button>
-                            <button class="button button-2 button-2c" id="XNORBtn">(<span style="text-decoration: overline">^</span>) XNOR</button>
-                        </p>
+        <!-- Input Group - Operand 2 - End -->
+        <!-- Input Group - Result - Start -->
 
-                    </div>
+        <div class="input-group input-group-lg col-lg-10 offset-lg-1">
 
-                    <!-- Input Group - Function Buttons - End -->
+          <div class="input-group spinner col-lg-2">
+            <input onClick="this.select();" type="text" pattern="[0-9]*"
+              onkeydown="return( FilterInput(event) || event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106) || (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) )"
+              onpaste="handlePaste(event)" class="decimalInputs form-control" id="resultDecimal" value="13" readonly>
+            <div class="input-group-btn-vertical">
+              <button class="btn btn-default" id="resultCopy" type="button" data-clipboard-target="#resultDecimal"><i class="fa fa-copy"></i></button>
+            </div>
+          </div>
 
-                </div>
+          <div class="input-group input-group-lg col-lg-7">
 
-            </section>
-        
-            <section class="color-2 col-lg-12 footer">
-                <a href="https://github.com/AYIDouble" class="gitHubText" target="_blank"><p>Created by AYIDouble (Alpay Yildirim)</p> <p> <img src="img/GitHub_Logo_White.png" alt="GitHub Logo" class="gitHubLogo"></img></p></a>
-            </section>
+            <div class="input-group-prepend">
+              <span class="input-group-text inputLabel" id="inputGroup-sizing-lg">Result</span>
+            </div>
 
-        </div><!-- /container -->
+            <input onClick="this.select();" type="text" pattern="[0-1]*" class="binaryInputs form-control" id="resultBinary" aria-label="Large" aria-describedby="inputGroup-sizing-sm" readonly>
 
-        <script src="js/scripts.js"></script>
-    </body>
+          </div>
+
+          <div class="input-group col-lg-2 offset-lg-1">
+            <input onClick="this.select();" type="text" class="form-control" id="resultSystem" readonly>
+          </div>
+        </div>
+
+        <!-- Input Group - Result - End -->
+        <!-- Input Group - Function Buttons -->
+
+        <div class="functionalButtons" id="BTNContainer">
+
+          <p class="col-lg-12 BTNRow">
+            <button class="button button-2 button-2c active" id="addBtn">+</button>
+            <button class="button button-2 button-2c" id="subBtn">-</button>
+            <button class="button button-2 button-2c" id="mulBtn">*</button>
+            <button class="button button-2 button-2c" id="divBtn">/</button>
+          </p>
+
+          <p class="col-lg-12 BTNRow">
+            <button class="button button-2 button-2c" id="ANDBtn">(&) AND</button>
+            <button class="button button-2 button-2c" id="ORBtn">(|) OR</button>
+            <button class="button button-2 button-2c" id="XORBtn">(^) XOR</button>
+          </p>
+
+          <p class="col-lg-12 BTNRow">
+            <button class="button button-2 button-2c" id="NANDBtn">(<span style="text-decoration: overline">&</span>) NAND</button>
+            <button class="button button-2 button-2c" id="NORBtn">(<span style="text-decoration: overline">|</span>) NOR</button>
+            <button class="button button-2 button-2c" id="XNORBtn">(<span style="text-decoration: overline">^</span>) XNOR</button>
+          </p>
+
+        </div>
+
+        <!-- Input Group - Function Buttons - End -->
+
+      </div>
+
+    </section>
+
+    <section class="color-2 col-lg-12 footer">
+      <a href="https://github.com/AYIDouble" class="gitHubText" target="_blank">
+        <p>Created by AYIDouble (Alpay Yildirim)</p>
+        <p> <img src="img/GitHub_Logo_White.png" alt="GitHub Logo" class="gitHubLogo"></img></p>
+      </a>
+    </section>
+
+  </div><!-- /container -->
+
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
