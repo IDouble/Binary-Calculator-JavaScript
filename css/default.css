@@ -2,205 +2,218 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 @font-face {
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'codropsicons';
+  src: url('../fonts/codropsicons/codropsicons.eot');
+  src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
 
 body {
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	color: #89867e;
-	background: #262626;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #89867e;
+  background: #262626;
 }
 
 header {
-	background:#ffffff;
+  background: #ffffff;
 }
 
 a {
-	color: #888;
-	text-decoration: none;
+  color: #888;
+  text-decoration: none;
 }
 
 a:hover,
 a:active {
-	color: #333;
+  color: #333;
 }
 
 /* Header Style */
 .main,
-.container > header {
-	margin: 0 auto;
-	padding: 2em;
+.container>header {
+  margin: 0 auto;
+  padding: 2em;
 }
 
-.container > header {
-	text-align: center;
+.container>header {
+  text-align: center;
 }
 
-.container > header h1 {
-	font-size: 2.625em;
-	line-height: 1.3;
-	margin: 0;
-	font-weight: 300;
+.container>header h1 {
+  font-size: 2.625em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 300;
 }
 
-.container > header span {
-	display: block;
-	font-size: 60%;
-	opacity: 0.5;
-	padding: 0 0 0.6em 0.1em;
+.container>header span {
+  display: block;
+  font-size: 60%;
+  opacity: 0.5;
+  padding: 0 0 0.6em 0.1em;
 }
 
 /* To Navigation Style */
 .codrops-top {
-	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
-	text-transform: uppercase;
-	width: 100%;
-	font-size: 0.69em;
-	line-height: 2.2;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 0.69em;
+  line-height: 2.2;
 }
 
 .codrops-top a {
-	padding: 0 1em;
-	letter-spacing: 0.1em;
-	color: #888;
-	display: inline-block;
+  padding: 0 1em;
+  letter-spacing: 0.1em;
+  color: #888;
+  display: inline-block;
 }
 
 .codrops-top a:hover {
-	background: rgba(255,255,255,0.95);
-	color: #333;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
 }
 
 .codrops-top span.right {
-	float: right;
+  float: right;
 }
 
 .codrops-top span.right a {
-	float: left;
-	display: block;
+  float: left;
+  display: block;
 }
 
 .codrops-icon:before {
-	font-family: 'codropsicons';
-	margin: 0 4px;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+  font-family: 'codropsicons';
+  margin: 0 4px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 .codrops-icon-drop:before {
-	content: "\e001";
+  content: "\e001";
 }
 
 .codrops-icon-prev:before {
-	content: "\e004";
+  content: "\e004";
 }
 
 .codrops-icon-archive:before {
-	content: "\e002";
+  content: "\e002";
 }
 
 .codrops-icon-next:before {
-	content: "\e000";
+  content: "\e000";
 }
 
 .codrops-icon-about:before {
-	content: "\e003";
+  content: "\e003";
 }
 
 .container {
-	height: 100%;
-	position: relative;
+  height: 100%;
+  position: relative;
 }
 
-.container > section {
-	margin: 0 auto;
-	padding: 5em 3em;
-	text-align: center;
-	color: #fff;
+.container>section {
+  margin: 0 auto;
+  padding: 5em 3em;
+  text-align: center;
+  color: #fff;
 }
 
-.container > section p {
-	position: relative;
-	margin: 0;
-	padding: 1em;
-	z-index: 1;
+.container>section p {
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  z-index: 1;
 }
 
-.container > section p.text {
-	font-size: 1.4em;
+.container>section p.text {
+  font-size: 1.4em;
 }
 
 .no-touch .note-touch {
-	display: none;
+  display: none;
 }
 
 .color-1 {
-	background: #262626;
+  background: #262626;
 }
 
 .color-2 {
-	background: #000000;
+  background: #000000;
 }
 
 .color-3 {
-	background: #fcd04b;
+  background: #fcd04b;
 }
 
 .color-4 {
-	background: #2ecc71;
+  background: #2ecc71;
 }
 
 .color-5 {
-	background: #9e54bd;
+  background: #9e54bd;
 }
 
 .color-6 {
-	background: #4593e3;
+  background: #4593e3;
 }
 
 .color-7 {
-	background: #2ac56c;
+  background: #2ac56c;
 }
 
 .color-8 {
-	background: #ecf0f1;
+  background: #ecf0f1;
 }
 
 .color-8 p.text {
-	color: #aaa;
-	font-weight: bold;
+  color: #aaa;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 25em) {
-
-	.codrops-icon span {
-		display: none;
-	}
-
+  .codrops-icon span {
+    display: none;
+  }
 }
 
 /* Input Number Spinner */
-
 .spinner {
   width: 100px;
 }
@@ -217,7 +230,7 @@ a:active {
   display: table-cell;
 }
 
-.input-group-btn-vertical > .btn {
+.input-group-btn-vertical>.btn {
   display: block;
   float: none;
   width: 100%;
@@ -228,314 +241,306 @@ a:active {
   border-radius: 0;
 }
 
-.input-group-btn-vertical > .btn:first-child {
+.input-group-btn-vertical>.btn:first-child {
   border-top-right-radius: 4px;
 }
 
-.input-group-btn-vertical > .btn:last-child {
+.input-group-btn-vertical>.btn:last-child {
   margin-top: -2px;
   border-bottom-right-radius: 4px;
 }
 
-.input-group-btn-vertical i{
+.input-group-btn-vertical i {
   position: absolute;
   top: 2.8px;
   left: 4.8px;
-  
 }
 
-.input-group-btn-vertical .btn-default{
+.input-group-btn-vertical .btn-default {
   transition-timing-function: ease-in-out;
-  background-color:rgba(0,0,0,0.7);
-  box-shadow:none !important;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: none !important;
 }
 
 .input-group-btn-vertical .plus:hover {
-  background-color:rgba(0,255,0,0.8);
+  background-color: rgba(0, 255, 0, 0.8);
 }
 
 .input-group-btn-vertical .plus:active {
-  background-color:rgba(0,255,0,1);
-  box-shadow:none !important;
+  background-color: rgba(0, 255, 0, 1);
+  box-shadow: none !important;
 }
 
 .input-group-btn-vertical .minus:hover {
-  background-color:rgba(255,0,0,0.8);
+  background-color: rgba(255, 0, 0, 0.8);
 }
 
 .input-group-btn-vertical .minus:active {
-  background-color:rgba(255,0,0,1);
-  box-shadow:none !important;
+  background-color: rgba(255, 0, 0, 1);
+  box-shadow: none !important;
 }
 
 /* Result - Copy Button */
-
-#resultCopy{
-    top:2px;
-    height:100%;
+#resultCopy {
+  top: 2px;
+  height: 100%;
 }
 
-#resultCopy i{
-    top: 14px;
-    left: 4.8px;
+#resultCopy i {
+  top: 14px;
+  left: 4.8px;
 }
 
 #resultCopy:hover {
-  background-color:rgba(0 , 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #resultCopy:active {
-  background-color:rgba(0 , 0, 0, 1);
-  box-shadow:none !important;
+  background-color: rgba(0, 0, 0, 1);
+  box-shadow: none !important;
 }
 
 /* Options Box */
-
-.optionsBox{
-    padding-top:20px !important;
-    padding-bottom:20px !important;
-    background-color: rgba(0 , 0, 0, 0.7) !important;
+.optionsBox {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
-.optionsBox h1{
-    color:#FFFFFF;
+.optionsBox h1 {
+  color: #FFFFFF;
 }
 
-.optionsBox .input-group-text{
-    background-color:rgba(0 , 0, 0, 0.8);
-    color:#FFF !important;
+.optionsBox .input-group-text {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF !important;
 }
 
-.optionsBox .custom-select-lg{
-    font-size:100%;
+.optionsBox .custom-select-lg {
+  font-size: 100%;
 }
 
-.optionsBox .optionButtons{
-    position:relative;
-    display:inherit;
-    padding:0 0;
+.optionsBox .optionButtons {
+  position: relative;
+  display: inherit;
+  padding: 0 0;
 }
 
-.optionsBox .button-2c{
-    height:31px;
-    padding:4px 20px !important;
-    margin:0 5px !important;
-    color:#FFF;
-    background-color:rgb(255, 0, 0);
-    box-shadow: 0 6px rgba(255, 0, 0, 0.7);
+.optionsBox .button-2c {
+  height: 31px;
+  padding: 4px 20px !important;
+  margin: 0 5px !important;
+  color: #FFF;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 6px rgba(255, 0, 0, 0.7);
 }
 
-.optionsBox .button-2c:hover{
-    box-shadow: 0 4px rgba(255, 0, 0, 0.7);
+.optionsBox .button-2c:hover {
+  box-shadow: 0 4px rgba(255, 0, 0, 0.7);
 }
 
 @media screen and (min-width: 767px) {
-    .optionButtons #ACButton {
-        left: 16px;
-    }
+  .optionButtons #ACButton {
+    left: 16px;
+  }
 
-    .bootstrap-switch-handle-on {
-        height: 36px;
-    }
+  .bootstrap-switch-handle-on {
+    height: 36px;
+  }
 }
 
 @media screen and (max-width: 766px) {
-    .bitwiseButtons {
-        display: none !important;
-    }
+  .bitwiseButtons {
+    display: none !important;
+  }
 
-    .inputLabel{
-        display: none !important;
-    }
+  .inputLabel {
+    display: none !important;
+  }
 
-    .binaryInputs {
-      border-radius: 5px !important;
-    }
+  .binaryInputs {
+    border-radius: 5px !important;
+  }
 
-    .rightBox, .my-4{
-        display: none !important;
-    }
+  .rightBox, .my-4 {
+    display: none !important;
+  }
 
-    #operand1System , #operand2System, #resultSystem, .operandSystemContainer, .bitwiseButtonsContainer, .optionButtonsContainer, .ribbon, .h1Options{
-        display: none !important;
-    }
+  #operand1System, #operand2System, #resultSystem, .operandSystemContainer, .bitwiseButtonsContainer, .optionButtonsContainer, .ribbon, .h1Options {
+    display: none !important;
+  }
 
-    .footer,.header{
-      display: none !important;
-    }
+  .footer, .header {
+    display: none !important;
+  }
 
-    .optionsBox{
-      margin-top:-40px;
-    }
+  .optionsBox {
+    margin-top: -40px;
+  }
 
-    .optionContainer h1{
-        margin-bottom:30px;
-    }
+  .optionContainer h1 {
+    margin-bottom: 30px;
+  }
 
-    .inputs{
-      margin-top:-15px;
-    }
+  .inputs {
+    margin-top: -15px;
+  }
 
-    #BTNContainer{
-        margin-top:-10px;
-        margin-bottom:-60px;
-    }
+  #BTNContainer {
+    margin-top: -10px;
+    margin-bottom: -60px;
+  }
 
-    #BTNContainer button{
-        margin-top: 20px !important;
-    }
+  #BTNContainer button {
+    margin-top: 20px !important;
+  }
 
-    #BTNContainer .BTNRow{
-        margin-top: -25px !important;
-    }
+  #BTNContainer .BTNRow {
+    margin-top: -25px !important;
+  }
 
-    .inputs .button-2c {
-        padding: 10px 20px !important;
-    }
+  .inputs .button-2c {
+    padding: 10px 20px !important;
+  }
 }
 
-.bootstrap-switch-null *{
-    cursor: not-allowed !important;
+.bootstrap-switch-null * {
+  cursor: not-allowed !important;
 }
 
 /* Inputs */
-
-.inputs .input-group{
-    margin-top:15px;
+.inputs .input-group {
+  margin-top: 15px;
 }
 
-.inputs .inputLabel{
-    min-width:128px;
+.inputs .inputLabel {
+  min-width: 128px;
 }
 
-.inputs .systemOutput{
-    height:48px !important;
+.inputs .systemOutput {
+  height: 48px !important;
 }
 
-.inputs .bitwiseButtons{
-	position:relative;
-	display:inherit;
-	padding:0 0;
+.inputs .bitwiseButtons {
+  position: relative;
+  display: inherit;
+  padding: 0 0;
 }
 
-.inputs .button-2c{
-	height:42px;
-	padding:10px 20px;
-	margin:0 5px;
-	background-color:rgba(0 , 0, 0, 0.4);
-	box-shadow: 0 6px rgba(0 , 0, 0, 0.7);
+.inputs .button-2c {
+  height: 42px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.7);
 }
 
-.inputs .binaryInputs{
-	font-size:1rem !important;
+.inputs .binaryInputs {
+  font-size: 1rem !important;
 }
 
-.inputs .button-2c:hover{
-	box-shadow: 0 4px rgba(0 , 0, 0, 0.7);
+.inputs .button-2c:hover {
+  box-shadow: 0 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Inputs - Lower Functional Buttons */
-
-.inputs .functionalButtons{
-	margin-top:20px;
+.inputs .functionalButtons {
+  margin-top: 20px;
 }
 
-.inputs .functionalButtons .button-2c{
-	height:42px;
-	padding:8px 40px;
-	margin:0 5px;
-	background-color:rgba(0 , 0, 0, 0.8);
-	box-shadow: 0 6px rgba(0, 0, 0, 0.7) !important;
+.inputs .functionalButtons .button-2c {
+  height: 42px;
+  padding: 8px 40px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.7) !important;
 }
 
-.inputs .functionalButtons .button-2c:hover{
-	box-shadow: 0 4px rgba(0, 0, 0, 0.7) !important;
+.inputs .functionalButtons .button-2c:hover {
+  box-shadow: 0 4px rgba(0, 0, 0, 0.7) !important;
 }
 
-.inputs .functionalButtons .active{
-	border:2px solid #FFFFFF;
-	background-color:rgba(0 , 0, 0, 1) !important;
-	padding: 8px 38px;
+.inputs .functionalButtons .active {
+  border: 2px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 1) !important;
+  padding: 8px 38px;
 }
 
-.inputs .functionalButtons .button-2c:hover{
-	box-shadow: 0 4px rgba(135, 193, 230, 0.7);
+.inputs .functionalButtons .button-2c:hover {
+  box-shadow: 0 4px rgba(135, 193, 230, 0.7);
 }
 
 /* GitHub Logo */
-
-.gitHubText{
-	font-size:14px;
-	color: rgba(255, 255, 255, 0.5);
-	text-decoration: none;
-	line-height: 24px;
-	transition: 0.125s ease-in-out;
+.gitHubText {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  line-height: 24px;
+  transition: 0.125s ease-in-out;
 }
 
 .gitHubText:hover {
-	text-decoration:none; 
-	color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
 }
 
-.gitHubLogo{
-	height:80px;
-	color: rgba(255, 255, 255, 1) !important;
+.gitHubLogo {
+  height: 80px;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .gitHubLogo:hover {
-	color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 /* Title */
-
-.titleSpan{
-	font-size:12px; 
-	font-weight:bold;
-	margin-top:10px;
-	position:relative;
+.titleSpan {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  position: relative;
 }
 
-.titleSpan ul{
-	list-style-type: none;
-	display:inline-table;
-	width:30%;
-	padding:0 0 0 0;
-	margin:0 0 0 0;
+.titleSpan ul {
+  list-style-type: none;
+  display: inline-table;
+  width: 30%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
-header{
-    padding-bottom:16px !important;
+header {
+  padding-bottom: 16px !important;
 }
 
-.fa{
-	color:#FFFFFF;
+.fa {
+  color: #FFFFFF;
 }
 
-.input-group-text{
-	color:#FFFFFF !important;
-	background-color:rgba(0 , 0, 0, 0.7) !important;
+.input-group-text {
+  color: #FFFFFF !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
-.form-control{
-	color:#000000 !important;
+.form-control {
+  color: #000000 !important;
 }
 
-.input-group-btn-vertical .btn{
-	border:#FFFFFF 1px solid;
+.input-group-btn-vertical .btn {
+  border: #FFFFFF 1px solid;
 }
 
 /* Remove Input spinner */
-
 /* Hide HTML5 Up and Down arrows. */
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="number"] {
-	-moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
-.ribbon img{
-	z-index:5;
+.ribbon img {
+  z-index: 5;
 }
