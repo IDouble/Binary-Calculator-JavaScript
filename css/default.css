@@ -204,9 +204,11 @@ a:active {
 .spinner {
   width: 100px;
 }
+
 .spinner input {
   text-align: right;
 }
+
 .input-group-btn-vertical {
   position: relative;
   white-space: nowrap;
@@ -214,6 +216,7 @@ a:active {
   vertical-align: middle;
   display: table-cell;
 }
+
 .input-group-btn-vertical > .btn {
   display: block;
   float: none;
@@ -224,13 +227,16 @@ a:active {
   position: relative;
   border-radius: 0;
 }
+
 .input-group-btn-vertical > .btn:first-child {
   border-top-right-radius: 4px;
 }
+
 .input-group-btn-vertical > .btn:last-child {
   margin-top: -2px;
   border-bottom-right-radius: 4px;
 }
+
 .input-group-btn-vertical i{
   position: absolute;
   top: 2.8px;
@@ -262,7 +268,7 @@ a:active {
   box-shadow:none !important;
 }
 
-/* Result - Copy Button*/
+/* Result - Copy Button */
 
 #resultCopy{
     top:2px;
@@ -285,7 +291,6 @@ a:active {
 
 /* Options Box */
 
-
 .optionsBox{
     padding-top:20px !important;
     padding-bottom:20px !important;
@@ -295,7 +300,6 @@ a:active {
 .optionsBox h1{
     color:#FFFFFF;
 }
-
 
 .optionsBox .input-group-text{
     background-color:rgba(0 , 0, 0, 0.8);
@@ -476,7 +480,7 @@ a:active {
 .gitHubLogo{
     height:80px;
     color: rgba(255, 255, 255, 1) !important;
-  }
+}
 
 .gitHubLogo:hover {
   color: rgba(255, 255, 255, 1) !important;
