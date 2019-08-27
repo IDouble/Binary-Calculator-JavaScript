@@ -413,94 +413,94 @@ a:active {
 }
 
 .inputs .bitwiseButtons{
-    position:relative;
-    display:inherit;
-    padding:0 0;
+	position:relative;
+	display:inherit;
+	padding:0 0;
 }
 
 .inputs .button-2c{
-    height:42px;
-    padding:10px 20px;
-    margin:0 5px;
-    background-color:rgba(0 , 0, 0, 0.4);
-    box-shadow: 0 6px rgba(0 , 0, 0, 0.7);
+	height:42px;
+	padding:10px 20px;
+	margin:0 5px;
+	background-color:rgba(0 , 0, 0, 0.4);
+	box-shadow: 0 6px rgba(0 , 0, 0, 0.7);
 }
 
 .inputs .binaryInputs{
-    font-size:1rem !important;
+	font-size:1rem !important;
 }
 
 .inputs .button-2c:hover{
-    box-shadow: 0 4px rgba(0 , 0, 0, 0.7);
+	box-shadow: 0 4px rgba(0 , 0, 0, 0.7);
 }
 
 /* Inputs - Lower Functional Buttons */
 
 .inputs .functionalButtons{
-    margin-top:20px;
+	margin-top:20px;
 }
 
 .inputs .functionalButtons .button-2c{
-    height:42px;
-    padding:8px 40px;
-    margin:0 5px;
-    background-color:rgba(0 , 0, 0, 0.8);
-    box-shadow: 0 6px rgba(0, 0, 0, 0.7) !important;
+	height:42px;
+	padding:8px 40px;
+	margin:0 5px;
+	background-color:rgba(0 , 0, 0, 0.8);
+	box-shadow: 0 6px rgba(0, 0, 0, 0.7) !important;
 }
 
 .inputs .functionalButtons .button-2c:hover{
-    box-shadow: 0 4px rgba(0, 0, 0, 0.7) !important;
+	box-shadow: 0 4px rgba(0, 0, 0, 0.7) !important;
 }
 
 .inputs .functionalButtons .active{
-    border:2px solid #FFFFFF;
-    background-color:rgba(0 , 0, 0, 1) !important;
-    padding: 8px 38px;
+	border:2px solid #FFFFFF;
+	background-color:rgba(0 , 0, 0, 1) !important;
+	padding: 8px 38px;
 }
 
 .inputs .functionalButtons .button-2c:hover{
-    box-shadow: 0 4px rgba(135, 193, 230, 0.7);
+	box-shadow: 0 4px rgba(135, 193, 230, 0.7);
 }
 
 /* GitHub Logo */
 
 .gitHubText{
-    font-size:14px;
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-    line-height: 24px;
-    transition: 0.125s ease-in-out;
+	font-size:14px;
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	line-height: 24px;
+	transition: 0.125s ease-in-out;
 }
 
 .gitHubText:hover {
-    text-decoration:none; 
-    color: rgba(255, 255, 255, 1);
+	text-decoration:none; 
+	color: rgba(255, 255, 255, 1);
 }
 
 .gitHubLogo{
-    height:80px;
-    color: rgba(255, 255, 255, 1) !important;
+	height:80px;
+	color: rgba(255, 255, 255, 1) !important;
 }
 
 .gitHubLogo:hover {
-  color: rgba(255, 255, 255, 1) !important;
+	color: rgba(255, 255, 255, 1) !important;
 }
 
 /* Title */
 
 .titleSpan{
-    font-size:12px; 
-    font-weight:bold;
-    margin-top:10px;
-    position:relative;
+	font-size:12px; 
+	font-weight:bold;
+	margin-top:10px;
+	position:relative;
 }
 
 .titleSpan ul{
-    list-style-type: none;
-    display:inline-table;
-    width:30%;
-    padding:0 0 0 0;
-    margin:0 0 0 0;
+	list-style-type: none;
+	display:inline-table;
+	width:30%;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
 }
 
 header{
@@ -508,20 +508,20 @@ header{
 }
 
 .fa{
-  color:#FFFFFF;
+	color:#FFFFFF;
 }
 
 .input-group-text{
-  color:#FFFFFF !important;
-  background-color:rgba(0 , 0, 0, 0.7) !important;
+	color:#FFFFFF !important;
+	background-color:rgba(0 , 0, 0, 0.7) !important;
 }
 
 .form-control{
-  color:#000000 !important;
+	color:#000000 !important;
 }
 
 .input-group-btn-vertical .btn{
-  border:#FFFFFF 1px solid;
+	border:#FFFFFF 1px solid;
 }
 
 /* Remove Input spinner */
