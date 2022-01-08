@@ -2,7 +2,6 @@
 
 **Link** : **[https://ayidouble.github.io/Binary-Calculator-JavaScript](https://ayidouble.github.io/Binary-Calculator-JavaScript)**</br>
 **Mobile App** : **[https://github.com/AYIDouble/Binary-Calculator-Android-Java-App](https://github.com/AYIDouble/Binary-Calculator-Android-Java-App)**</br>
-**Official Google Play Store Download Link** : **[https://play.google.com/store/apps/details?id=com.binarycalculator.ayidouble.binarycalculator.app](https://play.google.com/store/apps/details?id=com.binarycalculator.ayidouble.binarycalculator.app)**
 
 A handy **Calculator** for binary operations, that works on **all devices**. 📱 💻 🖥
 
