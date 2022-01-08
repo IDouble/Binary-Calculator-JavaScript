@@ -2,7 +2,6 @@
 
 **Link** : **[https://ayidouble.github.io/Binary-Calculator-JavaScript](https://ayidouble.github.io/Binary-Calculator-JavaScript)**</br>
 **Mobile App** : **[https://github.com/AYIDouble/Binary-Calculator-Android-Java-App](https://github.com/AYIDouble/Binary-Calculator-Android-Java-App)**</br>
-**Official Google Play Store Download Link** : **[https://play.google.com/store/apps/details?id=com.binarycalculator.ayidouble.binarycalculator.app](https://play.google.com/store/apps/details?id=com.binarycalculator.ayidouble.binarycalculator.app)**
 
 A handy **Calculator** for binary operations, that works on **all devices**. 📱 💻 🖥
 
@@ -26,8 +25,7 @@ this will be a perfect template to create such one.
 - ***[Laptop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 💻***
 - ***[Desktop](https://ayidouble.github.io/Binary-Calculator-JavaScript) (Chrome, Firefox, Edge, Safari) 🖥***
 
-
-## [📱 FREE Download Google Play Store: 📱](https://play.google.com/store/apps/details?id=com.binarycalculator.ayidouble.binarycalculator.app)
+## [📱 FREE Download Google Play Store: 📱](https://ayidouble.github.io/Binary-Calculator-JavaScript)
 ![Free Google Play Store Binary Calculator Addition Subtraction Multiplication Division NOT AND OR XOR Mobile (Smartphone)](Images/Binary-Calculator-Google-Play.png)
 
 ## Binary Operations ➕ ➖ ➗ ✖️
