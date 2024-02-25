@@ -63,3 +63,5 @@ while you're typing, an algorithm already calculates every number you type and d
 - [ ] More responsive elements and better support for mobile devices.
 - [x] Implementing a Ternary Calculator that is working with Trits and Trytes, this is very interesting for quantum mechanics (Quantum Computing). It's a good way of a concept that could be used to use the power of Qubits that can have multiple states. [It's Done, Check it out here!](https://github.com/AYIDouble/Trinary-Calculator-JavaScript)
 - [ ] More numeral systems.
+
+![Binance Ready to give crypto a try ? buy bitcoin and other cryptocurrencies on binance](Images/binance.jpg)
